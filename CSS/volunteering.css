@@ -1,0 +1,497 @@
+/* =================================== */
+/*   Volunteering module - overhaul needed         */
+/* =================================== */
+
+
+/* Tables */
+
+body .msl_table {border:none !important;}
+body .msl_table .msl_row td, body.msl_table .msl_altrow td {
+    padding: 7px;
+    vertical-align: middle;
+    max-width: 280px;
+}
+
+body table.msl_table th {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-right: medium none;
+    color: #111111;
+    font-size: 100%;
+    padding: 10px 10px 5px 0;
+}
+body table.msl_table th[align="right"] {
+    text-align: right;
+}
+body .msl_table td {
+    border-bottom: 1px solid #666666;
+    padding: 5px;
+}
+body .msl_table .msl_row td, body .msl_table .msl_altrow td {
+    border-right: medium none;
+}
+td input.button {padding:3px 6px;background:#333;color:#fff;border:none;}
+
+
+/* Training page */
+
+/*.month-selector {
+    background: none repeat scroll 0 0 #eee;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    margin:10px 0;
+}
+
+.month-selector #ctl00_Main_CourseList1_btnBack {position:absolute;left:7px;top:7px;}
+.month-selector  #ctl00_Main_CourseList1_btnNext {position:absolute;right:7px;top:7px;}
+.month-selector span {font-size:20px;text-transform:uppercase;font-weight:bold;}
+
+.month-selector input {
+position:absolute;
+top:8px;
+border:none;
+/*background:#ccc;
+padding: 5px 8px;
+}/*
+
+.provider-filter {
+	margin: 10px 0;
+    border-bottom: 1px solid #CCCCCC;
+    padding: 0 10px 10px;
+}
+
+.provider-filter input {
+padding:5px 10px;
+top:8px;
+border:none;
+background:#ccc;
+}
+.provider-filter select {margin-bottom:0;}
+
+/* Skill icons */
+
+/* Eep! Not sure about a default here... */
+
+/* Provider pages */
+
+.vol-providers h1 {display:none;}
+.vol-providers > a {display:none;}
+
+.vol-providers dl {}
+.vol-providers dt {
+    margin: 15px 0 5px;
+    padding: 0;
+}
+.vol-providers dt a  {
+    border-bottom: 1px solid #CCCCCC;
+    display: block;
+    line-height: 1;
+    padding: 0 0 5px;
+}
+.vol-providers dd {
+    margin: 0 0 10px;
+}
+
+/* Profile Page */
+
+.page_profile .vp_form.popup {
+padding: 10px 20px;
+display: inline-block;
+}
+.page_profile .popup.vp_form fieldset {
+margin:0;border:none;
+display: inline-block;
+}
+.page_profile .popup.vp_form .vpFormPair {padding:0;}
+.page_profile .popup.vp_form h3 {border-bottom: 1px solid #ccc;margin:0;}
+.page_profile .popup.vp_form h3 + a, .page_profile .popup.vp_form h3 + a + a, .browse-opps .filters a {
+    background: none repeat scroll 0 0 #CCCCCC;
+    color: #333333;
+    display: inline-block;
+    padding: 0 5px;
+    text-decoration: none;
+}
+
+.page_profile .popup ul {margin:0;}
+.page_profile .popup table {width:100%;}
+.page_profile .popup td {padding:3px;}
+.page_profile .popup td input {margin:0;}
+
+/* Activity Log */
+
+#ctl00_Main_acAdd {
+    background: none repeat scroll 0 0 #eee;
+    border-radius: 10px;
+    padding: 5px 10px 10px;
+    border: 1px solid #ddd;
+}
+
+.ac-content .vp_form fieldset {
+border:none;padding:0;margin:0;
+}
+.ac-content .vp_form .vpFormPair {padding:7px 10px 0;}
+.ac-header, .ac-selected-header {
+    background-color: #7FD183;
+    border: medium none;
+    border-radius: 7px;
+    color: #FFFFFF;
+    font-size: 1.2em;
+    margin: 5px 0 0;
+    padding: 7px 10px;
+    cursor:pointer;
+}
+.msl_admin_page .ac-header {
+  border: solid 1px #999;
+  background: #7FD183;
+  padding: 1em;
+}
+.ac-header:before {content: '+ '}
+.ac-selected-header:before {content: '- '}
+
+.ac-selected-header {
+    font-weight:bold;
+}
+.ac-content {
+    border: medium none;
+    margin: 0;
+    padding: 10px;
+    background: #eee;
+}
+.ac-content .hint-text {margin-left:10px;}
+#ctl00_Main_up1 .ac-header, #ctl00_Main_up1 .ac-selected-header {background-color:#5B7DD7;}
+
+.page_volunteeringlog .row > div {margin-top:20px;}
+.adding a {
+    border-color: #AAAAAA;
+    border-radius: 3px;
+    font-size: 100%;
+    font-weight: normal;
+    margin-right: 1em;
+    padding: 0.35em 0.7em;
+    width: auto;
+    background-color: #ccc;
+    color: #111;
+}
+
+.adding a, .editdelete a {
+    display: inline-block;
+    margin: 0 0 15px;
+    padding: 5px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+.editdelete a {
+    background: none repeat scroll 0 0 #333333;
+    color: #FFFFFF;
+    float: right;
+    margin-left: 5px;
+}
+.editdelete a + a {
+    background: none repeat scroll 0 0 #CC0000;
+}
+.adding a:hover {color:#202020;}
+
+.vp_form input.button {
+    display: inline-block;
+    padding: 6px 3px;
+    margin-bottom: 0;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #337ab7;
+    color: #fff;
+}
+/* Persistent Summary */
+
+#emp-summary {display:none;}
+
+/* Opportunities */
+
+.browse-opps .filters,
+.browse-opps .filters h3 {display: block; margin-bottom: 40px;}
+.browse-opps ul {margin: 5px 0 10px;padding:0;}
+.browse-opps table {width:100%;clear:both;  background: none repeat scroll 0 0 #FFFFFF;
+  margin: 0;
+  padding: 10px 10px 1px;}
+.browse-opps table label {font-size:11px;}
+
+.browse-opps .filters a {}
+
+.browse-opps .opportunity-list, .page_browse .msl_notification {float:left;width:100%;padding:0;margin: 20px 0 20px;}
+
+.browse-opps table td {vertical-align:top;padding: 1px 1px 2px 3px; border-bottom: 1px solid #eee; border-right: 1px solid #eee;}
+.browse-opps table td input {margin:0 !important;}
+
+/* Opportunity lists */
+
+.opportunity-list ul {
+list-style:none;
+margin:0 0 20px;
+padding:0;
+}
+.opportunity-list li {
+    margin: 0 0 10px;
+    padding: 0;
+}
+.opportunity-list > ul > li {
+    display: inline-block;
+    position: relative;
+    margin: 15px;
+    padding: 15px;
+    border-top: 1px solid #ccc;
+}
+.opportunity-list li h3 {
+line-height:1;
+margin: 0;
+padding:0;
+}
+.opportunity-list li h3 a, .activity-detail h3 {
+    background: none repeat scroll 0 0;
+    display: block;
+    font-size: 24px;
+    line-height: 1.8;
+    margin: 10px 0 10px;
+    padding: 0;
+}
+.activity-detail h3 {color:#333;}
+.opportunity-list li dl, .activity-detail dl {
+    background: none repeat scroll 0 0 #FFFFFF;
+    margin: 0;
+    padding: 10px 10px 1px;
+}
+.opportunity-list li dt, .activity-detail dt {
+    border-bottom: 1px solid #acacac;
+    margin: 0 0 3px;
+    padding: 0 0 3px;
+}
+.opportunity-list li dd, .activity-detail dd {margin:0 0 10px;}
+.opportunity-list .vol-skills-list li {
+    background: none repeat scroll 0 0 #333333;
+    border-radius: 3px 3px 3px 3px;
+    color: #FFFFFF;
+    display: inline-block;
+    line-height: 1;
+    list-style: none outside none;
+    margin: 0 1px 3px 0;
+    padding: 3px;
+}
+
+.msl-vol-opportunity-apply a {
+    background: none repeat scroll 0 0 #478EBD;
+    border-color: #FFFFFF;
+    border-image: none;
+    border-style: solid none;
+    border-width: 8px 0;
+    color: #FFFFFF;
+    display: block;
+    margin: 0 0 -10px;
+    padding: 7px 10px;
+    position: relative;
+}
+
+.msl-vol-opportunity-apply a:hover {
+text-decoration:none;
+background:#003A79;
+}
+
+.opportunity-list .vol-skills-list, .activity-detail h4, .activity-detail .vol-skills-list {display:none;}
+
+/* Details pages (provider and activity) */
+
+.provider-details {float:left;width:32%;}
+.provider-details + .opportunity-list, .provider-details + .activity-detail {float:right; width:66%;}
+
+.provider-details h1 {
+    border-bottom: 1px solid #CCCCCC;
+    font-size: 150%;
+    line-height: 1.2;
+    margin: 0 0 10px;
+    padding: 0 0 10px;
+}
+
+/* Skills record */
+
+.wrapper {
+padding: 10px; border-top: 1px dashed #ccc;
+}
+.wrapper > label {
+    background: none repeat scroll 0 0 #333333;
+    color: #FFFFFF;
+    display: block;
+    font-weight: bold;
+    margin: 0;
+    padding: 5px;
+}
+.wrapper td input[type="checkbox"], .wrapper label input {margin: 0 5px 0 0;}
+.wrapper > div {}
+.wrapper > div table {margin:0;}
+
+/* Profile page */
+
+p.name {
+    font-size: 34.5px;
+    font-weight: bold;
+    line-height: 40px;
+    margin: 20px 0 10px;
+}
+
+.vol-profile h2 {clear:both;margin:15px 0 5px;}
+
+.vol-type {
+    border-bottom: 1px solid #CCCCCC;
+    padding: 0 0 10px;
+    margin: 0 0 15px;
+}
+
+.vol-profile dd {margin:0;padding:5px;border-bottom: 1px solid #ccc;}
+.vol-activities dd {display:inline-block;border:none;}
+.vol-activities dd.status {
+    background: none repeat scroll 0 0 #fc0;
+    border-radius: 2px;
+    color: #333333;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 1px 4px 0;
+}
+.vol-profile dt {
+    background: none repeat scroll 0 0 #FFFFFF;
+    margin: 1px 0;
+    padding: 5px;
+    border-top: 1px solid #ccc;
+}
+.award-progress dt {
+    background: url("http://www.upsu.com/stylesheet/default/pending.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border-top: none;
+    padding: 7px;
+    cursor:pointer;
+}
+/* dt a, dt a:hover {color:#fff;} */
+.award-progress dt.incomplete {background-color:#fc0;position:relative;}
+.award-progress dt.complete {background-color:#80d038;}
+.award-progress dt.complete-pending {background-color:#d00;}
+.vol-activities {border-bottom: 1px solid #ccc;}
+
+.incomplete a {color:#900;}
+.vol-skills-list {margin: 10px 0;padding:0;}
+.vol-profile .vol-skills-list li {
+    clear: none;
+    float: none;
+    position: relative;
+    width: 160px;
+}
+.vol-profile .vol-skills-list li {
+    background: none repeat scroll 0 0 #333333;
+    border-radius: 3px;
+    clear: left;
+    color: #FFFFFF;
+    display: block;
+    float: left;
+    line-height: 1;
+    list-style: none outside none;
+    margin: 0 0 3px;
+    padding: 7px;
+}
+
+.vol-profile .vol-skills-list li span {
+background: #EC0C8C url(http://www.upsu.com/stylesheet/default/pending.png);
+margin: 0 -3px 0 3px;
+padding: 7px;
+border-radius: 0 2px 2px 0;
+position:absolute;
+right:0;
+top:0;
+bottom:0;
+text-align:right;
+}
+.vol-skills-list li span:after {content: '/10';} 
+.vol-hrs {
+    float: right;
+    width: 200px;
+    margin: 0 20px 20px 0;
+    height:200px;
+    background:url(http://www.upsu.com/stylesheet/upsuv2/hours.png);
+}
+.vol-hrs a {
+    color: #FFFFFF;
+    display: block;
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 200px;
+    max-height: 200px;
+    overflow: hidden;
+    text-align: center;
+}
+.msl-vol-award-progress {
+float:left;width:500px;
+}
+.vol-hrs + h2, input + h2 {display:none;}
+
+.vol-profile {position:relative;}
+
+.vol-profile input.button {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  white-space: nowrap;
+  margin-top: 20px;
+  padding: 0 11px;
+  font-size: 11px;
+  height: 22px;
+  line-height: 22px;
+  background: #50B848 !important;
+  background-color: #50B848 !important;
+  color: #FFF;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 3px;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+.award-progress dt.incomplete span {
+    background: none repeat scroll 0 0 #c80;
+    bottom: 0;
+    display: block;
+    height: 3px;
+    left: 0;
+    position: absolute;
+}
+
+/*.training {margin: 0 0 20px;padding:0;}
+.training li {list-style:none;padding:5px 7px; margin:0;background:#fc0;font-weight:bold;}
+.training li span {
+    background: #333333;
+    color: #EEEEEE;
+    display: block;
+    float: left;
+    font-weight: normal;
+    margin: -5px 7px -5px -7px;
+    padding: 5px 7px;
+    text-align: right;
+    width: 124px;
+    position:relative;
+    border-right:1px dashed #fff;
+}
+.training li span:before {
+    border: 6px solid #FFFFFF;
+    border-radius: 10px;
+    content: "";
+    left: -6px;
+    margin-top: -6px;
+    position: absolute;
+    top: 50%;
+}*/
