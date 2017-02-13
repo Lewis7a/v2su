@@ -32,8 +32,17 @@ jQuery(function ($) {
 				minHeight: Math.abs(navHeight) + 1
 			});
 		});
-	}
-	//endregion
+    }
+    //basket test
+    if ($('#basket .qty').length) {
+        count = 0;
+        $('#basket .qty').each(function () {
+            thiscount = $(this).text().match(/[0-9]+/g);
+            thiscount = parseInt(thiscount);
+            count = count + thiscount;
+        });
+        $('#basket-wrapper').append('<span class="itemcount">' + count + '</span>');
+    };
 
 });
 
