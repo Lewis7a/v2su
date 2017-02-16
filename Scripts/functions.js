@@ -35,7 +35,6 @@ jQuery(function ($) {
     }
 
 });
-
 $(document).ready(function () {
     if ($('#basket .qty').length) {
         count = 0;
