@@ -12349,20 +12349,28 @@ label.checkbox { padding-left: 20px; }
     cursor: pointer;
     top: -1px;
     left: auto;
-    right: -48px;
-    width: 48px;
+    right: -148px;
+    width: 148px;
     height: 48px;
     font-size: 20px;
     line-height: 46px;
     text-align: center;
-    background-color: #FFF;
+    background-color: #bf1e2e;
     border: 1px solid #DDD;
     border-left: 0;
     border-radius: 0 4px 4px 0;
     -moz-border-radius: 0 4px 4px 0;
     -webkit-border-radius: 0 4px 4px 0
 }
-
+.switcher-trigger span {
+    display: block;
+    margin: 0 5px;
+    border-bottom: 0px solid #EEE;
+    line-height: 46px;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFF;
+}
 .switcher .line {
     margin: 25px 0;
     border-color: #EEE
