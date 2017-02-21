@@ -6973,7 +6973,9 @@ body:not(.device-touch) .button.button-full strong {
 .button-3d.button-leaf:hover,
 .button-reveal.button-leaf:hover { background-color: #A8CABA !important; }
 
-.button-sv { background-color: #C3002F; }
+.button-sv {
+    background-color: #bf1e2e;
+}
 .button-3d.button-sv:hover,
 .button-reveal.button-sv:hover { background-color: #880020 !important; }
 
