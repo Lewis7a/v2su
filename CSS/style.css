@@ -12320,7 +12320,7 @@ label.checkbox { padding-left: 20px; }
         top: 120px;
     }
     .switcher i {
-        background-color: #fff;
+        color: #fff;
     }
 }
 .switcher strong {
