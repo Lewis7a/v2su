@@ -12317,7 +12317,10 @@ label.checkbox { padding-left: 20px; }
 }
 @media (max-width: 479px) {
     .switcher {
-        top: 80px;
+        top: 120px;
+    }
+    .switcher i {
+        background-color: #fff;
     }
 }
 .switcher strong {
