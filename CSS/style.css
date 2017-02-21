@@ -12309,16 +12309,20 @@ label.checkbox { padding-left: 20px; }
     width: 260px;
     background-color: #FFF;
     left: -260px;
-    top: 120px;
+    top: 140px;
     z-index: 89;
     color: #333;
     border: 1px solid #DDD;
     border-left: 0
 }
-
-    .switcher strong {
-        color: inherit
+@media (max-width: 479px) {
+    .switcher {
+        top: 80px;
     }
+}
+.switcher strong {
+    color: inherit
+}
 
 .switcher-head {
     position: relative;
@@ -12361,6 +12365,12 @@ label.checkbox { padding-left: 20px; }
     border-radius: 0 4px 4px 0;
     -moz-border-radius: 0 4px 4px 0;
     -webkit-border-radius: 0 4px 4px 0
+}
+@media (max-width: 479px) {
+    .switcher-trigger {
+        right: -48px;
+        width: 48px;
+    }
 }
 .switcher-trigger span {
     display: block;
@@ -12406,7 +12416,7 @@ ul.switcher-op-selectors li {
         border-radius: 2px
     }
 
-@media only screen and (max-width:979px) {
+/*@media only screen and (max-width:979px) {
     #switcher-op-layout {
         display: none
     }
@@ -12416,7 +12426,7 @@ ul.switcher-op-selectors li {
     .switcher {
         display: none
     }
-}
+}*/
 
 .dark .switcher-head span {
     border-bottom-color: rgba(255,255,255,.1)
