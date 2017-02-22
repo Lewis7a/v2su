@@ -8805,6 +8805,7 @@ body:not(.device-touch) .social-icon i {
 .tabs {
 	position: relative;
 	margin: 0 0 30px 0;
+    z-index: 10000;
 }
 
 ul.tab-nav:not(.tab-nav-lg) {
