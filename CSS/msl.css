@@ -1822,7 +1822,7 @@ input.button:hover {
 	.su-events2 .event_item {width:100%;}
 }
 @media all and (max-width:480px) {
-	.min-container {width: 310px !important;}
+	.min-container {width: 100% !important;}
 	.su-events2 .event_item {width:100%;}
  	.su-events2 .msl_eventlist .msl_event3 {margin: 0 0px 15px;}
 	.su-events2 .msl_eventlist .msl_event3 .msl_event_image {width:100%;}
