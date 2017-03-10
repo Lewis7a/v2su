@@ -533,16 +533,7 @@ var SU = SU || {};
 					ignore: '.no-fv'
 				});
 			}
-		},
-
-		resizeVideos: function(){
-			if ( $().fitVids ) {
-				$("#content,#footer,#slider:not(.revslider-wrap),.landing-offer-media,.portfolio-ajax-modal").fitVids({
-					customSelector: "iframe[src^='http://www.dailymotion.com/embed']",
-					ignore: '.no-fv'
-				});
-			}
-		},
+        },
 
 		imageFade: function(){
 			$('.image_fade').hover( function(){
