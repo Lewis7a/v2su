@@ -45,6 +45,49 @@ $(document).ready(function () {
         });
         $('#basket-wrapper').append('<span class="itemcount">' + count + '</span>');
     };
+    //Load the data
+    var $searchdata;
+    var $searchbox = $('#searchfield');
+    var timeoutID;
+    $searchbox.attr('placeholder', 'Start searching...');
+    // Load in search data - format= (<li><a>[searchable text]</a></li>)
+    $('#searchdata').load('/web/search/ #skin_Blank', function () {
+        $searchdata = $('#searchdata');
+    });
+    //Create a contains function, isn't case sensitive.
+    jQuery.expr[':'].Contains = function (a, i, m) {
+        return jQuery(a).text().toUpperCase().indexOf(m[3].toUpperCase()) >= 0;
+    };
+
+    //When the filter box is typed in, filter the list if the text length is >2
+    $searchbox.keyup(function (e) {
+        if (e.keyCode == 13) {
+            e.preventDefault();
+            var searchText = $searchbox.val().trim();
+            var searchQuery = '?q=' + searchText.replace(/\s+/g, '+');
+            window.location = 'http://www.upsu.com/search/' + searchQuery;
+        }
+        clearTimeout(timeoutID);
+        // Use setTimeout so only search if someone pauses for half a second
+        timeoutID = setTimeout(function () {
+            var filter = $searchbox.val();
+            if (filter.length >= 2) {
+                //Search the link name and the attributes (if shown) using the Contains function
+                var $visible = $searchdata.find('a:Contains("' + filter + '")');
+                $visible.parent().show();
+                $searchdata.find('a:not(:Contains("' + filter + '"))').parent().hide();
+                if ($visible.length != 0) {
+                    $searchdata.slideDown('fast');
+                }
+                else { $searchdata.fadeOut('fast'); }
+            }
+            else {
+                $searchdata.fadeOut('fast');
+                $('p#nothing').show();
+                $searchdata.find('li').hide();
+            }
+        });
+    });
 });
 
 
