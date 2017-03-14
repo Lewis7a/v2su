@@ -35,6 +35,10 @@ jQuery(function ($) {
     }
 
 });
+// +++++++++++++++++++
+// Basket+Search document load
+// Look to optimize search
+// +++++++++++++++++++
 $(document).ready(function () {
     if ($('#basket .qty').length) {
         count = 0;
@@ -45,7 +49,6 @@ $(document).ready(function () {
         });
         $('#basket-wrapper').append('<span class="itemcount">' + count + '</span>');
     };
-    //Load the data
     var $searchdata;
     var $searchbox = $('#searchfield');
     var timeoutID;
@@ -54,12 +57,10 @@ $(document).ready(function () {
     $('#searchdata').load('/web/search/ #skin_Blank', function () {
         $searchdata = $('#searchdata');
     });
-    //Create a contains function, isn't case sensitive.
     jQuery.expr[':'].Contains = function (a, i, m) {
         return jQuery(a).text().toUpperCase().indexOf(m[3].toUpperCase()) >= 0;
     };
-
-    //When the filter box is typed in, filter the list if the text length is >2
+    //When typed in, filter the list if the text length is >2
     $searchbox.keyup(function (e) {
         if (e.keyCode == 13) {
             e.preventDefault();
@@ -68,7 +69,6 @@ $(document).ready(function () {
             window.location = 'http://www.upsu.com/search/' + searchQuery;
         }
         clearTimeout(timeoutID);
-        // Use setTimeout so only search if someone pauses for half a second
         timeoutID = setTimeout(function () {
             var filter = $searchbox.val();
             if (filter.length >= 2) {
@@ -89,7 +89,6 @@ $(document).ready(function () {
         });
     });
 });
-
 
 (function () {
     "use strict";
