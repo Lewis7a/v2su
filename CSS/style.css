@@ -4640,7 +4640,25 @@ body.device-touch.device-xxs .portfolio-notitle .portfolio-overlay { display: no
 
 .masonry-thumbs.col-3 a { width: 33.30%; }
 
-.masonry-thumbs.col-4 a { width: 25%; }
+.masonry-thumbs.col-4 a {
+        width: 25%;
+}
+@media (max-width: 768px) {
+    .masonry-thumbs.col-4 a {
+        width: 50%;
+    }
+}
+@media (max-width: 479px) {
+    .masonry-thumbs.col-4 a {
+        width: 100%;
+    }
+}
+
+@media all and (max-width: 1200px) {
+    .su-events2 .event_item {
+        width: 100%;
+    }
+}
 
 .masonry-thumbs.col-5 a { width: 20%; }
 
