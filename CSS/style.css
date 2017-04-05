@@ -6640,6 +6640,7 @@ body:not(.device-touch) .button {
 
 .button-dark { background-color: #444; }
 .button-green { background-color: #44ac33; }
+.button-rag { background-color: #bf1e2e; }
 
 .button-light {
 	background-color: #EEE;
@@ -6655,6 +6656,7 @@ body:not(.device-touch) .button {
 
 .button.button-dark:hover { background-color: #337ab7; }
 .button.button-green:hover { background-color: #28671e; }
+.button.button-rag:hover { background-color: #333; }
 
 
 .button.button-mini {
