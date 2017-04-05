@@ -769,7 +769,7 @@ var SU = SU || {};
 				var lgCol = element.attr('data-lg-col'),
 					mdCol = element.attr('data-md-col'),
 					smCol = element.attr('data-sm-col'),
-					xsCol = element.attr('data-xs-col'),
+					xsCol = element.attrvideo('data-xs-col'),
 					xxsCol = element.attr('data-xxs-col');
 
 				if( element.hasClass('col-2') ) column = 2;

@@ -2760,7 +2760,7 @@ body.side-panel-open:not(.device-xxs):not(.device-xs):not(.device-sm) .body-over
 
 .video-wrap video {
 	position: relative;
-	z-index: 1;
+	z-index: 10000;
 	width: 100%;
 }
 
@@ -6983,6 +6983,10 @@ body:not(.device-touch) .button.button-full strong {
 .button-red { background-color: #C02942; }
 .button-3d.button-red:hover,
 .button-reveal.button-red:hover { background-color: #C02942 !important; }
+
+.button-rag { background-color: #bf1e2e; }
+.button-3d.button-rag:hover,
+.button-reveal.button-rag:hover { background-color: #bf1e2e !important; }
 
 .button-teal { background-color: #53777A; }
 .button-3d.button-teal:hover,
