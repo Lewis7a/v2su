@@ -1043,10 +1043,9 @@ body.top-search-open .dark #header-wrap:not(.not-dark) #top-search a,
 
 #footer.dark,
 .dark #footer {
-    background-image: url('/stylesheet/upsuv2/trianglesbg.png') !important;
     background-size: cover;
     background-position: center center;
-	background-color: #333;
+	background-color: #333 !important;
 	border-top-color: rgba(0,0,0,0.2);
 }
 
@@ -1082,7 +1081,7 @@ body #side-panel.dark #side-panel-trigger-close a {
 	color: #FFF;
 }
 
-.dark .widget h4 { color: #DDD; }
+.dark .widget h4 { color: #FFF; }
 
 .dark .widget p { opacity: 0.8; }
 

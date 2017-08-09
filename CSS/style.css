@@ -2,10 +2,10 @@
 
     UPSU. 
     2015/16/17 skin.
-
+    2018 skin = v3su.
     ---
 	Version: 3.0
-
+    Working on v3su which will be iterated on, up to 3.9.
 -----------------------------------------------------------------------------------*/
 
 
@@ -11734,7 +11734,7 @@ button.toast-close-button {
 	font-size: 15px;
 	font-weight: 600;
 	letter-spacing: 2px;
-	text-transform: uppercase;
+	text-transform: capitalize;
 }
 
 .sidebar-widgets-wrap .widget > h4 { letter-spacing: 1px; }
@@ -11794,7 +11794,7 @@ body:not(.device-touch) .tagcloud a {
 .widget_rss ul,
 .widget_rss li {
 	list-style: none;
-	margin-left: 15px;
+	margin-left: 0px !important;
 }
 
 .widget_nav_menu li,
