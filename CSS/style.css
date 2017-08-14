@@ -7559,13 +7559,13 @@ body:not(.device-touch) .button.button-full strong {
 
 .feature-box.fbox-center .fbox-icon {
 	position: relative;
-	width: 96px;
-	height: 96px;
+	width: 64px;
+	height: 64px;
 	margin: 0 auto 30px;
 }
 
 .feature-box.fbox-center .fbox-icon i {
-	font-size: 42px;
+	font-size: 28px;
 	line-height: 96px;
 }
 
@@ -7594,7 +7594,7 @@ body:not(.device-touch) .button.button-full strong {
 
 .feature-box.fbox-center.fbox-light .fbox-icon i { line-height: 94px; }
 
-.feature-box.fbox-center.fbox-light.fbox-outline .fbox-icon i { line-height: 86px; }
+.feature-box.fbox-center.fbox-light.fbox-outline .fbox-icon i { line-height: 55px; }
 
 .feature-box.fbox-center.fbox-light.fbox-outline.fbox-large .fbox-icon i { line-height: 114px; }
 
