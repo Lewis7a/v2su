@@ -742,10 +742,10 @@ body.top-search-open .dark #header-wrap:not(.not-dark) #top-search a,
 	border-color: #DDD;
 }
 .dark .social-icon.si-mini {
-    width: 24px;
-    height: 24px;
+    width: 35px;
+    height: 35px;
     font-size: 11px;
-    line-height: 23px !important;
+    line-height: 36px !important;
 }
 .dark #footer .social-icon.si-borderless,
 #footer.dark .social-icon.si-borderless { color: #555 !important; }
