@@ -35,9 +35,9 @@ ul.msl-candidates li img {
     border: 0px solid #E5E5E5; /* removed temp */
 }
 .feature-box h3 {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 700;
-    text-transform: uppercase;
+    text-transform: capitalize;
     letter-spacing: 1px;
     margin-bottom: 0;
     color: #333;
