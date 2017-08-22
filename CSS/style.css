@@ -1913,7 +1913,7 @@ body.top-search-open #side-panel-trigger { opacity: 0; }
 }
 
 
-/* Primary Menu - Style 4
+/* Primary Menu - Style 4 - Testing for MSL control panel.
 -----------------------------------------------------------------*/
 
 #header.sticky-header:not(.static-sticky) #control-menu.style-4 > ul > li > a {
@@ -1929,12 +1929,13 @@ body.top-search-open #side-panel-trigger { opacity: 0; }
 }
 #primary-menu.style-4>ul>li>a {
     display: block;
-    line-height: 22px;
+    height: 44px;
+    line-height: 44px;
     margin: 28px 0;
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 2px;
-    border: 1px solid #333;
+    border: 1px solid #CCC;
 }
 
 /* Primary Menu - Sub Title
