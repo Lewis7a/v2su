@@ -86,7 +86,7 @@ h6 {
 	font-weight: 600;
 	line-height: 1.5;
 	margin: 0 0 30px 0;
-	font-family: 'Arial', Helvetica, sans-serif;
+	font-family: 'Lato', sans-serif;
 }
 
 h5,
@@ -128,7 +128,7 @@ table,
 fieldset,
 form { margin-bottom: 0px; }
 
-small { font-family: 'Arial', Helvetica, sans-serif; }
+small { font-family: 'Lato', sans-serif; }
 
 .uppercase { text-transform: uppercase !important; }
 
@@ -1568,7 +1568,7 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #primary-menu.style-2.cent
 	transition: opacity .3s ease;
 }
 
-body.top-search-open #top-search a i.icon-search3,
+body.top-search-open #top-search a i.icon-line-search,
 #top-search a i.icon-line-cross { opacity: 0; }
 
 body.top-search-open #top-search a i.icon-line-cross {
@@ -11731,9 +11731,9 @@ button.toast-close-button {
 
 .widget > h4 {
 	margin-bottom: 25px;
-	font-size: 15px;
+	font-size: 14px;
 	font-weight: 600;
-	letter-spacing: 2px;
+	letter-spacing: 1px;
 	text-transform: capitalize;
 }
 
