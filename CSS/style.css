@@ -1934,30 +1934,7 @@ body.top-search-open #side-panel-trigger { opacity: 0; }
     padding-top: 10px;
     padding-bottom: 10px;
     border-radius: 2px;
-    border: 1px solid transparent;
-}
-
-/* Primary Menu - Style 5
------------------------------------------------------------------*/
-
-#header.sticky-header:not(.static-sticky) #primary-menu.style-5 > ul > li { margin-left: 2px; }
-
-#header.sticky-header:not(.static-sticky) #primary-menu.style-5 > ul > li:first-child { margin-left: 0; }
-
-#header.sticky-header:not(.static-sticky) #primary-menu.style-5 > ul > li > a { line-height: 60px; }
-
-#header.sticky-header:not(.static-sticky) #primary-menu.style-5 > ul > li > a > div {
-	padding: 0;
-	line-height: 60px;
-}
-
-#header.sticky-header:not(.static-sticky) #primary-menu.style-5 > ul > li > a i {
-	display: inline-block;
-	width: 14px;
-	top: 1px;
-	margin: 0 5px 0 0;
-	font-size: 14px !important;
-	line-height: 59px;
+    border: 1px solid #333;
 }
 
 /* Primary Menu - Sub Title
