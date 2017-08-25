@@ -1048,7 +1048,6 @@ body.stretched #header.full-header .container {
 	/* line-height: 99px;*/
 	width: 14px;
 	text-align: center;
-	margin-right: 6px;
 	-webkit-transition: line-height .4s ease;
 	-o-transition: line-height .4s ease;
 	transition: line-height .4s ease;
