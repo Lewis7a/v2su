@@ -1929,10 +1929,16 @@ body.top-search-open #side-panel-trigger { opacity: 0; }
 	float: left;
 	height: 100px;
 }
+#header.sticky-header:not(.static-sticky) #control-menu.style-4 #primary-menu.style-4 > ul > li > a {
+    display: block;
+    height: 44px;
+    line-height: 22px;
+    border-radius: 2px;
+}
 #primary-menu.style-4>ul>li>a {
     display: block;
     height: 44px;
-    line-height: 20px;
+    line-height: 22px;
     margin: 28px 0;
     padding-top: 10px;
     padding-bottom: 10px;
