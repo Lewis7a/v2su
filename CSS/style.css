@@ -1036,7 +1036,7 @@ body.stretched #header.full-header .container {
 	font-family: 'Arial', Helvetica, sans-serif;
 	-webkit-transition: height .4s ease, line-height .4s ease, margin .4s ease, padding .4s ease;
 	-o-transition: height .4s ease, line-height .4s ease, margin .4s ease, padding .4s ease;
-	transition: height .4s ease, line-height .4s ease, margin .4s ease, padding .4s ease;
+	transition: height .1s ease, line-height .1s ease, margin .1s ease, padding .1s ease;
 }
 
 #primary-menu ul li span { display: none; }
@@ -1050,7 +1050,7 @@ body.stretched #header.full-header .container {
 	text-align: center;
 	-webkit-transition: line-height .4s ease;
 	-o-transition: line-height .4s ease;
-	transition: line-height .4s ease;
+	transition: line-height .1s ease;
 }
 
 #primary-menu > ul > li:hover a,
