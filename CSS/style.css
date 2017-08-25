@@ -1077,7 +1077,7 @@ body.stretched #header.full-header .container {
 
 #primary-menu ul ul ul {
 	top: -2px !important;
-	left: 218px;
+	/*left: 218px;*/
 }
 
 #primary-menu ul ul.menu-pos-invert,
@@ -1803,8 +1803,11 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header
 
 #header.sticky-style-3 { height: 181px; }
 
-#header.sticky-style-2 #header-wrap,
-#header.sticky-style-3 #header-wrap { height: 60px; }
+    #header.sticky-style-2 #header-wrap,
+    #header.sticky-style-3 #header-wrap,
+    #header.sticky-style-4 #header-wrap {
+        height: 60px;
+    }
 
 #primary-menu > ul > li > ul,
 #primary-menu > ul > li > .mega-menu-content,
@@ -1917,9 +1920,8 @@ body.top-search-open #side-panel-trigger { opacity: 0; }
 -----------------------------------------------------------------*/
 
 #header.sticky-header:not(.static-sticky) #control-menu.style-4 > ul > li > a {
-	height: 36px;
-	line-height: 34px;
-	margin: 12px 0;
+    margin: 0;
+    border-radius: 0;
 }
 
 #header.sticky-header:not(.static-sticky) #control-menu.style-4 > ul > li > a i { line-height: 33px; }
@@ -1930,7 +1932,7 @@ body.top-search-open #side-panel-trigger { opacity: 0; }
 #primary-menu.style-4>ul>li>a {
     display: block;
     height: 44px;
-    line-height: 44px;
+    line-height: 20px;
     margin: 28px 0;
     padding-top: 10px;
     padding-bottom: 10px;
