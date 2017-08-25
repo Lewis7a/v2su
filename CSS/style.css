@@ -1923,7 +1923,12 @@ body.top-search-open #side-panel-trigger { opacity: 0; }
     border-radius: 0;
 }
 
-#header.sticky-header:not(.static-sticky) #control-menu.style-4 > ul > li > a i { line-height: 33px; }
+#header.sticky-header:not(.static-sticky) #primary-menu.style-4 > ul > li > a i {
+    height: 60px !important;
+    margin: 0px;
+    padding-top: 0px;
+    border: 0px;
+}
 #primary-menu.style-4 {
 	float: left;
 	height: 100px;
