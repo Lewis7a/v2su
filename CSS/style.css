@@ -1867,7 +1867,12 @@ body.top-search-open #side-panel-trigger { opacity: 0; }
 
 #header.sticky-header:not(.static-sticky).sticky-style-2 { height: 161px; }
 
-#header.sticky-header:not(.static-sticky) #primary-menu > ul > li > a { line-height: 60px; }
+#header.sticky-header:not(.static-sticky) #primary-menu > ul > li > a {
+    line-height: 60px;
+    margin: 0px;
+    padding-top: 0px;
+    border: 0px;
+}
 
 #header.sticky-header:not(.static-sticky) #primary-menu > ul > li > a i { line-height: 59px; }
 
