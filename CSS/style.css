@@ -1076,7 +1076,7 @@ body.stretched #header.full-header .container {
 
 #ctl00_controlpanel_ulControlPanel  {
     top: -2px !important;
-    left: 0px;
+    left: 0px !important;
 }
 
 #primary-menu ul ul ul {
