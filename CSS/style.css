@@ -1074,9 +1074,14 @@ body.stretched #header.full-header .container {
 	margin: 0;
 }
 
+#ctl00_controlpanel_ulControlPanel  {
+    top: -2px !important;
+    left: 0px;
+}
+
 #primary-menu ul ul ul {
 	top: -2px !important;
-	/*left: 218px;*/
+	left: 218px;
 }
 
 #primary-menu ul ul.menu-pos-invert,

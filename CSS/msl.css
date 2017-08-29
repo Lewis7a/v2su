@@ -223,7 +223,7 @@ body #msl_admin li, body #controlpanel li, #link-acc li {
 }
 #msl_admin ul > li > a, #controlpanel ul > li > a, #link-acc > li > a {
     background-image: none;
-    background: #333333;
+    background: transparent;
     padding: 0 12px;
     font-size: 12px;
     font-weight: 600;
