@@ -3288,7 +3288,7 @@ body.stretched .container-fullwidth .breadcrumb { right: 60px !important; }
 
 .content-wrap {
 	position: relative;
-	padding: 20px 0;
+	padding: 0px 0; /* temp fix for v3su */
 }
 
 #content .container { position: relative; }
