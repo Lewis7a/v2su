@@ -88,6 +88,26 @@ $(document).ready(function () {
             }
         });
     });
+    $('#google-map1').gMap({
+
+        address: 'University of Plymouth Student Union, Drake Circus, Plymouth, PL4 8AA',
+        maptype: 'ROADMAP',
+        zoom: 14,
+        markers: [
+            {
+                address: "University of Plymouth Student Union, PL4 8AA"
+            }
+        ],
+        doubleclickzoom: false,
+        controls: {
+            panControl: true,
+            zoomControl: true,
+            mapTypeControl: true,
+            scaleControl: false,
+            streetViewControl: false,
+            overviewMapControl: false
+        }
+    });
 });
 
 (function () {
