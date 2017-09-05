@@ -1988,7 +1988,7 @@
     }
 	#side-panel-trigger { right: 43px; }
 
-    #slider .owl-carousel .owl-item img { height: 300px; }
+    #slider .owl-carousel .owl-item img { height: 300px !important; }
 
 	.swiper_wrapper:not(.force-full-screen),
 	.swiper_wrapper:not(.force-full-screen):not(.canvas-slider-grid) .swiper-slide,
