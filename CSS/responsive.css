@@ -1830,6 +1830,8 @@
 
 	.full-screen:not(.force-full-screen) .container.vertical-middle { width: 470px !important; }
 
+    .boxed-slider { padding-top: 60px; }
+
 	#top-search form input { padding-right: 60px; }
 
 	.swiper_wrapper:not(.force-full-screen),
@@ -1987,6 +1989,8 @@
         margin-top: 0px;
     }
 	#side-panel-trigger { right: 43px; }
+
+    .boxed-slider { padding-top: 60px; }
 
     #slider .owl-carousel .owl-item img { height: 300px !important; }
 
