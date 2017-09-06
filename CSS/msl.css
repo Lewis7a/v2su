@@ -672,11 +672,14 @@ input.button:hover {
 */
 .home-news .msl-item {
     width: 33.33333333%;
-    padding-right: 5px;
+    margin-right: 5px;
     background-color: #FFF;
     border: 1px solid #E5E5E5;
     border-top: 1px solid #E5E5E5;
     border-radius: 0 0 5px 5px;
+}
+.home-news .msl-item:last-child {
+    margin-right: 0px;
 }
 .home-news .msl-item .msl-image,
 .home-news .msl-item .msl-image a {
@@ -695,7 +698,7 @@ input.button:hover {
     font-weight: 700;
     text-transform: capitalize;
     letter-spacing: 1px;
-    margin-bottom: 0;
+    margin-top: 20px;
     padding: 15px;
     color: #333;
 }
