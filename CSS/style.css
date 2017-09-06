@@ -1045,7 +1045,7 @@ body.stretched #header.full-header .container {
 	position: relative;
 	font-size: 14px !important;
 	top: 1px;
-	/* line-height: 99px;*/
+	/* line-height: 99px; */
 	width: 14px;
 	text-align: center;
 	-webkit-transition: line-height .4s ease;
