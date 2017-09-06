@@ -702,7 +702,9 @@ input.button:hover {
     color: #333;
 }
 }
-.home-news h3 {
+.home-news .msl-title,
+.home-news .msl-title h3,
+.home-news .msl-title h3 a {
     font-size: 12px !important;
     font-family: 'Lato', sans-serif !important;
     font-weight: 700;
