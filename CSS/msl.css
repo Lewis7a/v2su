@@ -464,8 +464,10 @@ input.button:hover {
     margin: 10px;
 }
 .msl-title {
-    padding: 0px 20px 10px 20px;
-   	font-size: 18px;
+    padding: 0px 20px 10px 15px;
+   	font-size: 13px;
+    font-weight: 700;
+    font-family: 'lato', serif;
 }
 .msl-title a {
 	color: #444;
@@ -522,7 +524,7 @@ input.button:hover {
 .msl-item .msl-pubdate:before { 
     content: url(/stylesheet/upsuv2/news-calendar.png);
     display: inline;
-    margin: 0 10px 15px 0px !important;
+    margin: 0 0px 0px 5px !important;
     opacity: 0.5;
 }
 .msl-item .msl-leader {
