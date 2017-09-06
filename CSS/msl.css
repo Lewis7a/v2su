@@ -685,15 +685,17 @@ input.button:hover {
         margin-right: 4px;
     }
     .home-news .msl-item .msl-image {
-        height: 160px;
+        height: 160px !important;
+    }
+}
+@media (min-width: 767px) and (max-width: 972px) {
+    .home-news .msl-item .msl-image {
+        display: none !important;
     }
 }
 @media (min-width: 300px) and (max-width: 971px) {
     .home-news .msl-item {
         width: 100%;
-    }
-    .home-news .msl-item .msl-image {
-        display: none !important;
     }
 }
 .home-news .msl-item:last-child {
