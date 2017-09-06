@@ -680,6 +680,16 @@ input.button:hover {
     border-top: 1px solid #E5E5E5;
     border-radius: 0 0 5px 5px;
 }
+@media (min-width: 972px) and (max-width: 1199px) {
+    .home-news .msl-item {
+        margin-right: 4px;
+    }
+}
+@media (min-width: 300px) and (max-width: 971px) {
+    .home-news .msl-item {
+        width: 100%;
+    }
+}
 .home-news .msl-item:last-child {
     margin-right: 0px;
 }
