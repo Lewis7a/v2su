@@ -85,7 +85,8 @@ ul.msl-candidates li img {
   font-size: 13px;
 }
 .msl-loginbutton {
-  float: right;
+  float: left;
+  width: 100%;
   position: relative;
   height: 44px;
   /*border-left: 1px solid #666;*/
