@@ -690,7 +690,7 @@ input.button:hover {
 .home-news .msl-item .msl-image img {
     border-radius: 5px 5px 0 0;
 }
-.home-news .msl-title h3 {
+.home-news .msl-title {
     font-size: 12px;
     font-weight: 700;
     text-transform: capitalize;
