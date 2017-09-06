@@ -735,6 +735,14 @@ input.button:hover {
     font-family: 'lato', serif;
     font-style: normal !important;
 }
+.home-news .newslist .msl-morelink {
+    background: #082F41;
+    color: #fff;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 8px 10px;
+    line-height: 1;
+    font-size: 14px;
 }
 /* ================== */
 /*  NEWSLIST            2         
