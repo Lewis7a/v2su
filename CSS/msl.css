@@ -685,7 +685,7 @@ input.button:hover {
         margin-right: 4px;
     }
     .home-news .msl-item .msl-image {
-        display: none !important;
+        height: 160px;
     }
 }
 @media (min-width: 300px) and (max-width: 971px) {
