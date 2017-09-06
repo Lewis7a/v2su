@@ -684,10 +684,16 @@ input.button:hover {
     .home-news .msl-item {
         margin-right: 4px;
     }
+    .home-news .msl-item .msl-image {
+        display: none !important;
+    }
 }
 @media (min-width: 300px) and (max-width: 971px) {
     .home-news .msl-item {
         width: 100%;
+    }
+    .home-news .msl-item .msl-image {
+        display: none !important;
     }
 }
 .home-news .msl-item:last-child {
