@@ -666,19 +666,42 @@ input.button:hover {
 		top: 190px;
 	}
 }
+/*
+    HOME-newsList
+    =====================
+*/
+.home-news .msl-item {
+    width: 33.33333333%;
+    padding-right: 5px;
+}
+.home-news .msl-item .msl-image {
+
+}
+.home-news .msl-title h3 {
+
+}
+.home-news .msl-leader {
+
+}
+.home-news .msl-item-details {
+
+}
+.home-news .msl-item-details .msl-pubdate span {
+    
+}
 /* ================== */
 /*  NEWSLIST            2         
     Based on boxed layout
 /* ================== */
 .news_item {
-  	width: 100%;
-	position: relative;
-	min-height:1px;
-	float:left;
-	padding: 3px;
-	margin: 3px;
-	overflow: hidden;
-	border: 1px solid #e5eaea;
+    width: 100%;
+    position: relative;
+    min-height: 1px;
+    float: left;
+    padding: 3px;
+    margin: 3px;
+    overflow: hidden;
+    border: 1px solid #e5eaea;
 }
 .news_item .news_image {
   	display: inline-block;
