@@ -2443,186 +2443,107 @@ background-color:#f0f0f0;
       color: #00c8aa; 
 }
 
-
-
-
-
-/* ============== */
-/* A-Z CONTROLS   */
-/* ============== */
-/* +++++++++++++++++++ */
-/* Main tab controls */
-/* +++++++++++++++++++ */
-.a-z {
-  overflow: hidden;
+/* Clubs&Socs - Org Browse   
+/* ======================= */
+.browse input.textbox {
+    display: block;
+    width: 100%;
+    height: 38px;
+    padding: 8px 14px;
+    font-size: 15px;
+    line-height: 1.42857143;
+    color: #555555;
+    background-color: #ffffff;
+    background-image: none;
+    border: 2px solid #DDD;
+    border-radius: 0 !important;
+    -webkit-transition: border-color ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s;
+    transition: border-color ease-in-out .15s;
 }
-.a-z .msl-gl-group {
-  display:none;
+.browse input.button {
+    display: inline-block;
+    background: transparent;
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    white-space: nowrap;
+    margin: 0px;
+    padding: 0 22px;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #337ab7;
+    color: #FFF;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: none;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
-.a-z .msl-gl-group li {
-  float: none;
+.msl-gl-group {
+    text-align: center !important;
+    margin-bottom: 50px;
+    margin-left: 15px;
 }
-.a-z .msl-gl-group li a {
-  padding: 10px 20px 11px;
-  margin: 0;
-  border: 1px solid transparent;
-  -webkit-border-radius: 3px 0 0 3px;
-  -moz-border-radius: 3px 0 0 3px;
-  border-radius: 3px 0 0 3px;
+.msl-gl-group h3 {
+    margin-bottom: 0;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #333;
 }
-.a-z .msl-gl-group li.pi-active a,
-.a-z .msl-gl-group li.pi-active a:hover,
-.a-z .msl-gl-group li.pi-active a:focus {
-  border-right-width: 0;
+ul.msl_organisation_list {
+    list-style: none;
+    margin: 0px;
+    padding: 0;
 }
-.a-z .msl-gl-group li.pi-active a:after {
-  top: -1px;
-  left: -1px;
-  right: auto;
-  bottom: -1px;
-  width: 3px;
-  height: auto;
-  -webkit-border-radius: 3px 0 0 3px;
-  -moz-border-radius: 3px 0 0 3px;
-  border-radius: 3px 0 0 3px;
+ul.msl_organisation_list li {
+       border: 1px solid #EEE;
+        width: 32.8%;
+        display: inline-block;
+        background-color: #FFF;
+        -webkit-transition: all .3s ease;
+        -o-transition: all .3s ease;
+        transition: all .3s ease;
+        padding: 30px;
+        overflow: hidden;
+        margin: 2px;
 }
-.a-z ul.msl_organisation_list {
-  left: -1px;
-  margin: 0 0 40px;
-  -webkit-border-radius: 0 3px 3px 0;
-  -moz-border-radius: 0 3px 3px 0;
-  border-radius: 0 3px 3px 0;
-}
-.a-z ul.msl_organisation_list-transparent {
-  padding: 0 0 0 40px;
-  border-top-width: 0;
-  border-left-width: 1px;
-}
-/* NAV */
-.a-z .msl-gl-group {
-  margin-bottom: 0;
-  padding-left: 0;
-  border-bottom: 0;
-  list-style: none;
-}
-.a-z .msl-gl-group:before,
-.a-z .msl-gl-group:after {
-  content: " ";
-  /* 1 */
-  display: table;
-  /* 2 */
-}
-.a-z .msl-gl-group:after {
-  clear: both;
-}
-.a-z .msl-gl-group li {
-  position: relative;
-  display: block;
-  float: left;
-  margin: 0 0 -1px;
-}
-.a-z .msl-gl-group li a {
-  position: relative;
-  display: block;
-  margin-right: -1px;
-  padding: 9px 20px 11px;
-  border: 1px solid transparent;
-  border-radius: 3px 3px 0 0;
-  z-index: 1;
-  font-size: 14px;
-  -webkit-transition: all 0.2s ease-in-out 0s;
-  -moz-transition: all 0.2s ease-in-out 0s;
-  -ms-transition: all 0.2s ease-in-out 0s;
-  -o-transition: all 0.2s ease-in-out 0s;
-  transition: all 0.2s ease-in-out 0s;
-  /*&:hover,
-			&:focus {
-				text-decoration: none;
-			}*/
-
-}
-/* END NAV */
-
-
-
-/* SECTION */
-/* needs drastic updating for new v2su skin */
-.pi-section-white .a-z .msl-gl-group li a {
-  color: #70757a;
-  background: #f8fafa;
-  border-color: #e5eaea;
-}
-.pi-section-white .a-z .msl-gl-group li a:hover {
-  background: #ffffff;
-  color: #2e343c;
-}
-.pi-section-white .a-z .msl-gl-group li.pi-active a,
-.pi-section-white .a-z .msl-gl-group li.pi-active a:hover,
-.pi-section-white .a-z .msl-gl-group li.pi-active a:focus {
-  background: #ffffff;
-  border-color: #e5eaea;
-  border-bottom-color: #ffffff;
-  color: #2e343c;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-}
-.pi-section-white .a-z .msl-gl-group li.pi-active a:after {
-  background: #0086b4;
-}
-.pi-section-white .a-z .msl-gl-group-transparent li.pi-active a,
-.pi-section-white .a-z .msl-gl-group-transparent li.pi-active a:hover,
-.pi-section-white .a-z .msl-gl-group-transparent li.pi-active a:focus {
-  background: none;
-  border-bottom-color: none;
-}
-.pi-section-white .a-z .msl-gl-group li.pi-active a,
-.pi-section-white .a-z .msl-gl-group li.pi-active a:hover,
-.pi-section-white .a-z .msl-gl-group li.pi-active a:focus {
-  border-right-color: #ffffff;
-  border-bottom-color: #e5eaea;
-}
-.pi-section-white .a-z ul.msl_organisation_list {
-  background: #ffffff;
-  border-color: #e5eaea;
-}
-.pi-section-white .a-z ul.msl_organisation_list-shadow {
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
-  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.03);
-}
-.pi-section-white .a-z ul.msl_organisation_list-transparent {
-  background: none;
-}
-/* END SECTION */
-
-/* CONTENT */
-.a-z ul.msl_organisation_list {
-  position: relative;
-  z-index: 2;
-  padding: 0;
-  margin-bottom: 20px;
-  border: none;
-  overflow: hidden;
-  -webkit-border-radius: 0 0 3px 3px;
-  -moz-border-radius: 0 0 3px 3px;
-  border-radius: 0 0 3px 3px;
-}
-.a-z ul.msl_organisation_list > .pi-tab-pane {
-  display: none;
-}
-.a-z ul.msl_organisation_list > .pi-active {
-  display: block;
-}
-.a-z ul.msl_organisation_list-transparent {
-  border-bottom-width: 0;
-  border-left-width: 0;
-  border-right-width: 0;
-  padding: 40px 0 0px;
-  margin-bottom: 0;
+ul.msl_organisation_list li:hover {
+   background-color: #F5F5F5;
 }
 
-/* END A-Z CONTROLS */
+@media (min-width: 768px) and (max-width: 971px) {
+    ul.msl_organisation_list li {
+        width: 33.2%;
+    }
+}
+@media (min-width: 480px) and (max-width: 767px) {
+    ul.msl_organisation_list li {
+        width: 100%;
+    }
+}
+@media (max-width: 479px) {
+    ul.msl_organisation_list li {
+        width: 100%;
+    }
+}
+#6040 ul {
+    padding: 0px;
+}
+#6040 ul li a {
+        margin: 0px;
+        display: block;
+        width: 100%;
+        height: 100%;
+}
+.msl-gl-link {
+    display: block;
+    font-size: 20px;
+    color: #444;
+    margin-top: 0px;
+}
 
 .openingtimes {
   margin-bottom: 4px;
