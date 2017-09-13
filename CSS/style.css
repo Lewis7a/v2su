@@ -2005,6 +2005,7 @@ body.top-search-open #side-panel-trigger { opacity: 0; }
 #page-menu-wrap { background-color: #337ab7; }
 #page-menu-wrap.su { background-color: #007565; }
 #page-menu-wrap.sv { background-color: #e7417b; }
+#page-menu-wrap.sc { background-color: #48267d; }
 #page-menu-wrap.ad { background-color: #00c8dc; }
 #page-menu-wrap.elections { background-color: #bf1e2e; }
 
