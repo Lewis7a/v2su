@@ -2003,6 +2003,7 @@ body.top-search-open #side-panel-trigger { opacity: 0; }
 }
 
 #page-menu-wrap { background-color: #337ab7; }
+#page-menu-wrap.dark { background-color: #333; }
 #page-menu-wrap.su { background-color: #007565; }
 #page-menu-wrap.vol { background-color: #59BA41; }
 #page-menu-wrap.rag { background-color: #C02942; }
