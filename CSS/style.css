@@ -7390,7 +7390,9 @@ body:not(.device-touch) .button.button-full strong {
 	margin-bottom: 0;
 	color: #333;
 }
-
+.fbox-width {
+    width: 96px !Important;
+}
 .feature-box p {
 	margin: 8px 0 0 0;
 	color: #999;
@@ -12081,7 +12083,6 @@ body:not(.device-touch) .tagcloud a {
 .nav-tree ul ul ul a { padding-left: 40px; }
 .nav-tree ul ul ul ul a { padding-left: 60px; }
 .nav-tree ul ul ul ul ul a { padding-left: 80px; }
-
 
 
 .nav-tree-page {
