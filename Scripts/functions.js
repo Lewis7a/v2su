@@ -235,16 +235,16 @@ var killRequesting = debounce(function () {
 	requesting = false;
 }, 100);
 
-function onScrollSliderParallax() {
-	if (!requesting) {
-		requesting = true;
-		requestAnimationFrame(function(){
-			SU.slider.sliderParallax();
-			SU.slider.sliderElementsFade();
-		});
-	}
-	killRequesting();
-}
+//function onScrollSliderParallax() {
+//	if (!requesting) {
+//		requesting = true;
+//		requestAnimationFrame(function(){
+//			SU.slider.sliderParallax();
+//			SU.slider.sliderElementsFade();
+//		});
+//	}
+//	killRequesting();
+//}
 
 
 
