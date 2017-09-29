@@ -2764,7 +2764,7 @@ var SU = SU || {};
 			if( $slider.length > 0 ) { SU.slider.init(); }
 			if( $portfolio.length > 0 ) { SU.portfolio.init(); }
 			SU.widget.init();
-			SU.documentOnReady.windowscroll();
+			//SU.documentOnReady.windowscroll();
 		},
 
 		
