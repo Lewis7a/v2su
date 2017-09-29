@@ -2756,11 +2756,23 @@ var SU = SU || {};
 
         windowscroll: function () {
 
-            var headerOffset = 0;
-            var headerWrapOffset = 0;
+            var headerOffset = 0,
+                headerWrapOffset = 0,
+                pageMenuOffset = 0;
 
             if ($header.length > 0) { headerOffset = $header.offset().top; }
             if ($header.length > 0) { headerWrapOffset = $headerWrap.offset().top; }
+            if ($pagemenu.length > 0) {
+                if ($header.length > 0 && !$header.hasClass('no-sticky')) {
+                    if ($header.hasClass('sticky-style-2') || $header.hasClass('sticky-style-3')) {
+                        pageMenuOffset = $pagemenu.offset().top - $headerWrap.outerHeight();
+                    } else {
+                        pageMenuOffset = $pagemenu.offset().top - $header.outerHeight();
+                    }
+                } else {
+                    pageMenuOffset = $pagemenu.offset().top;
+                }
+            }
 
             var headerDefinedOffset = $header.attr('data-sticky-offset');
             if (typeof headerDefinedOffset !== 'undefined') {
@@ -2773,21 +2785,29 @@ var SU = SU || {};
                 }
             }
 
+            SU.header.stickyMenu(headerWrapOffset);
+            SU.header.stickyPageMenu(pageMenuOffset);
+
             $window.on('scroll', function () {
 
                 SU.initialize.goToTopScroll();
-                //$('body.open-header.close-header-on-scroll').removeClass("side-header-open");
+                $('body.open-header.close-header-on-scroll').removeClass("side-header-open");
                 SU.header.stickyMenu(headerWrapOffset);
-                SU.header.darkLogo();
+                SU.header.stickyPageMenu(pageMenuOffset);
+                SU.header.logo();
 
             });
 
             window.addEventListener('scroll', onScrollSliderParallax, false);
 
             if ($onePageMenuEl.length > 0) {
-                $window.scrolled(function () {
-                    SU.header.onepageScroller();
-                });
+                if ($().scrolled) {
+                    $window.scrolled(function () {
+                        SU.header.onepageScroller();
+                    });
+                } else {
+                    console.log('windowscroll: Scrolled Function not defined.');
+                }
             }
         }
 
@@ -2864,7 +2884,7 @@ var SU = SU || {};
         $textRotaterEl = $('.text-rotater');
 
     $(document).ready(SU.documentOnReady.init);
-    $window.load(SU.documentOnLoad.init);
+    $window.on('load', SU.documentOnLoad.init);
     $window.on('resize', SU.documentOnResize.init);
 
 })(jQuery);
