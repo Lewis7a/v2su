@@ -2789,7 +2789,7 @@ var SU = SU || {};
 			$window.on( 'scroll', function(){
 
 				SU.initialize.goToTopScroll();
-				$('body.open-header.close-header-on-scroll').removeClass("side-header-open");
+				//$('body.open-header.close-header-on-scroll').removeClass("side-header-open");
 				SU.header.stickyMenu( headerWrapOffset );
 				SU.header.darkLogo();
 
