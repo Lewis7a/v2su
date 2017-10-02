@@ -2764,6 +2764,16 @@ var SU = SU || {};
             if ($header.length > 0) { headerOffset = $header.offset().top; }
             if ($header.length > 0) { headerWrapOffset = $headerWrap.offset().top; }
 
+            var scrollPosition = [
+                self.pageXOffset || document.documentElement.scrollLeft || document.body.scrollLeft,
+                self.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+            ];
+
+            var html = jQuery('html');
+            var scrollPosition = html.data('scroll-position');
+            html.css('overflow', html.data('previous-overflow'));
+            window.scrollTo(scrollPosition[0], scrollPosition[1])
+
             var headerDefinedOffset = $header.attr('data-sticky-offset');
             if (typeof headerDefinedOffset !== 'undefined') {
                 if (headerDefinedOffset == 'full') {
