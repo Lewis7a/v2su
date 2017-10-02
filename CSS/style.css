@@ -10239,7 +10239,7 @@ body:not(.device-touch) .rounded-skill {
 .owl-carousel.owl-loading {
 	display:block;
 	min-height: 100px;
-	background: url('http://www.upsu.com/stylesheet/upsuv2/preloader.gif') no-repeat center center
+	background: url('https://www.upsu.com/stylesheet/upsuv2/preloader.gif') no-repeat center center
 }
 
 .owl-carousel.owl-hidden { opacity:0 }
