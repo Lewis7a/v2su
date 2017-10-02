@@ -211,8 +211,8 @@ function onScrollSliderParallax() {
     if (!requesting) {
         requesting = true;
         requestAnimationFrame(function () {
-            SEMICOLON.slider.sliderParallax();
-            SEMICOLON.slider.sliderElementsFade();
+            SU.slider.sliderParallax();
+            SU.slider.sliderElementsFade();
         });
     }
     killRequesting();
@@ -245,7 +245,8 @@ var SU = SU || {};
             SU.initialize.dataResponsiveHeights();
 
             $('.fslider').addClass('preloader2');
-
+//
+//
         },
 
         responsiveClasses: function () {
@@ -2842,7 +2843,9 @@ var SU = SU || {};
         $wrapper = $('#wrapper'),
         $header = $('#header'),
         $headerWrap = $('#header-wrap'),
+        $content = $('#content'),
         $footer = $('#footer'),
+        windowWidth = $window.width(),
         oldHeaderClasses = $header.attr('class'),
         oldHeaderWrapClasses = $headerWrap.attr('class'),
         stickyMenuClasses = $header.attr('data-sticky-class'),
@@ -2858,6 +2861,7 @@ var SU = SU || {};
         $onePageMenuEl = $('.one-page-menu'),
         onePageGlobalOffset = 0,
         $portfolio = $('#portfolio'),
+        $gridContainer = $('.grid-container'),
         $slider = $('#slider'),
         $sliderParallaxEl = $('.slider-parallax'),
         $pageTitle = $('#page-title'),
