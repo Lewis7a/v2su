@@ -2744,60 +2744,55 @@ var SU = SU || {};
 
     };
 
-    SU.documentOnReady = {
+	SU.documentOnReady = {
 
-        init: function () {
-            SU.initialize.init();
-            SU.header.init();
-            if ($slider.length > 0) { SU.slider.init(); }
-            if ($portfolio.length > 0) { SU.portfolio.init(); }
-            SU.widget.init();
-            SU.documentOnReady.windowscroll();
-        },
+		init: function(){
+			SU.initialize.init();
+			SU.header.init();
+			if( $slider.length > 0 ) { SU.slider.init(); }
+			if( $portfolio.length > 0 ) { SU.portfolio.init(); }
+			SU.widget.init();
+			SU.documentOnReady.windowscroll();
+		},
 
-        windowscroll: function () {
+		windowscroll: function(){
 
-            var headerOffset = 0,
-                headerWrapOffset = 0,
-                pageMenuOffset = 0;
+			var headerOffset = 0;
+			var headerWrapOffset = 0;
 
-            if ($header.length > 0) { headerOffset = $header.offset().top; }
-            if ($header.length > 0) { headerWrapOffset = $headerWrap.offset().top; }
+			if( $header.length > 0 ) { headerOffset = $header.offset().top; }
+			if( $header.length > 0 ) { headerWrapOffset = $headerWrap.offset().top; }
 
-            var headerDefinedOffset = $header.attr('data-sticky-offset');
-            if (typeof headerDefinedOffset !== 'undefined') {
-                if (headerDefinedOffset == 'full') {
-                    headerWrapOffset = $window.height();
-                    var headerOffsetNegative = $header.attr('data-sticky-offset-negative');
-                    if (typeof headerOffsetNegative !== 'undefined') { headerWrapOffset = headerWrapOffset - headerOffsetNegative - 1; }
-                } else {
-                    headerWrapOffset = Number(headerDefinedOffset);
-                }
-            }
+			var headerDefinedOffset = $header.attr('data-sticky-offset');
+			if( typeof headerDefinedOffset !== 'undefined' ) {
+				if( headerDefinedOffset == 'full' ) {
+					headerWrapOffset = $window.height();
+					var headerOffsetNegative = $header.attr('data-sticky-offset-negative');
+					if( typeof headerOffsetNegative !== 'undefined' ) { headerWrapOffset = headerWrapOffset - headerOffsetNegative - 1; }
+				} else {
+					headerWrapOffset = Number(headerDefinedOffset);
+				}
+			}
 
-            $window.on('scroll', function () {
+			$window.on( 'scroll', function(){
 
-                SU.initialize.goToTopScroll();
-                $('body.open-header.close-header-on-scroll').removeClass("side-header-open");
-                SU.header.stickyMenu(headerWrapOffset);
-                SU.header.logo();
+				SU.initialize.goToTopScroll();
+				$('body.open-header.close-header-on-scroll').removeClass("side-header-open");
+				SU.header.stickyMenu( headerWrapOffset );
+				SU.header.darkLogo();
 
-            });
+			});
 
-            window.addEventListener('scroll', onScrollSliderParallax, false);
+			window.addEventListener('scroll', onScrollSliderParallax, false);
 
-            if ($onePageMenuEl.length > 0) {
-                if ($().scrolled) {
-                    $window.scrolled(function () {
-                        SU.header.onepageScroller();
-                    });
-                } else {
-                    console.log('windowscroll: Scrolled Function not defined.');
-                }
-            }
-        }
+			if( $onePageMenuEl.length > 0 ){
+				$window.scrolled(function() {
+					SU.header.onepageScroller();
+				});
+			}
+		}
 
-    };
+	};
 
     SU.documentOnLoad = {
 
