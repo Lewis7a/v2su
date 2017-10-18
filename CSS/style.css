@@ -2035,6 +2035,7 @@ body.top-search-open #side-panel-trigger { opacity: 0; }
 
 #page-menu .menu-title,
 #page-menu .menu-title span a {
+    padding-left: 20px;
 	float: left;
 	color: #FFF;
 	font-size: 20px;
