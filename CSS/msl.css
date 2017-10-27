@@ -697,6 +697,9 @@ input.button:hover {
     .home-news .msl-item {
         width: 100%;
     }
+    .home-news .msl-item .msl-image {
+        display: none !important;
+    }
 }
 .home-news .msl-item:last-child {
     margin-right: 0px;
