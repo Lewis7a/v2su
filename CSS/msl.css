@@ -759,7 +759,7 @@ input.button:hover {
 }
 .home-news .msl-item .msl-pubdate:before {
     content: url(https://www.upsu.com//stylesheet/upsuv2/news-calendar.png);
-    display: none;
+    display: none !important;
     margin: 0 10px 15px 0px !important;
     opacity: 0.5;
 }
