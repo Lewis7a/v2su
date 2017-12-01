@@ -757,6 +757,12 @@ input.button:hover {
     font-family: 'lato', serif;
     font-style: normal !important;
 }
+.home-news .msl-item .msl-pubdate:before {
+    content: url(https://www.upsu.com//stylesheet/upsuv2/news-calendar.png);
+    display: none;
+    margin: 0 10px 15px 0px !important;
+    opacity: 0.5;
+}
 .home-news .newslist .msl-morelink {
     background: #082F41;
     color: #fff;
@@ -1092,7 +1098,7 @@ input.button:hover {
 }
 .feature-news .msl-item .msl-pubdate:before { 
     content: url(/) !important;
-    display: inline;
+    display: none;
     margin: 0 10px 15px 0px !important;
     opacity: 0.5;
 }
@@ -1350,7 +1356,7 @@ input.button:hover {
 }
 .main-news .msl-item .msl-pubdate:before { 
     content: url(https://www.upsu.com//stylesheet/upsuv2/news-calendar.png);
-    display: inline;
+    display: none;
     margin: 0 10px 15px 0px !important;
     opacity: 0.5;
 }
