@@ -1427,6 +1427,9 @@
         line-height: 44px;
         text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
     }
+    .boxed-slider {
+        padding-top: 60px;
+    }
 	.sidebar-widgets-wrap .widget {
 		display: inline-block;
 		vertical-align: top;
