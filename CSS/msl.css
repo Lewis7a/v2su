@@ -480,7 +480,7 @@ input.button:hover {
   	display: inline-block;
   	position: relative;
   	width: 100%;
-    height: 34px;
+    /*height: 34px;*/
 	margin-bottom: 20px;
 }
 .msl-item .msl-image a {
