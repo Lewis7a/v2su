@@ -1,0 +1,129 @@
+.forum_post {
+    width: 100%;
+}
+
+.forum_post_content {
+    padding-right: 0;
+}
+
+.forum_post_content1 {
+    padding-left: 7px;
+    background: #fff;
+}
+
+.forum_post_content2 {
+    background: #fff;
+    padding: 5px 30px 0.5em 0;
+}
+
+.forum_post_author {
+    width: 20%;
+    float: right;
+    clear: both;
+    margin: 0 0 5px 5px;
+    padding: 5px;
+}
+
+.badge {
+    margin: 0;
+    clear: both;
+    border: 1px solid #ccc;
+    padding: 5px;
+    float: right;
+}
+
+    .badge dl {
+        margin: 0;
+        padding: 4px;
+    }
+
+.forum_post_tools {
+    padding-left: 7px;
+    background: #999;
+}
+
+.forum_post_tools_inner {
+    background: #eee;
+    padding: 3px 30px 12px 0;
+}
+
+
+
+h1, .h1 {
+    font-size: 36px;
+    display: none;
+}
+
+dl.forum_nav {
+    margin-bottom: 15px;
+    position: relative;
+    padding: 10px;
+    display: inline;
+    width: 100%;
+    float: left;
+    background: #fff;
+}
+
+dl.forum_nav dd.forum_nav_1 {
+     padding-left: 0;
+     display: inline-block;
+}
+    dl.forum_nav dd.forum_nav_2 {
+        padding-left: 0;
+        display: inline-block;
+    }
+    dl.forum_nav dd.forum_nav_3 {
+        padding-left: 0;
+        display: inline-block;
+    }
+    dl.forum_nav dd.forum_nav_4 {
+        padding-left: 0;
+        display: inline-block;
+    }
+
+.forum_reply {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    white-space: nowrap;
+    margin-top: 10px;
+    padding: 0 22px;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    background: none;
+    background-color: #444;
+    color: #FFF;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: none;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+
+.forum_subscribe {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    white-space: nowrap;
+    margin-top: 10px;
+    padding: 0 22px;
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    background: none;
+    background-color: #444;
+    color: #FFF;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: none;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+
+
+.rss {
+    display: none;
+}
