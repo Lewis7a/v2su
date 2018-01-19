@@ -1423,9 +1423,13 @@
         position: relative;
         display: block;
         height: 44px;
-        top: 7px !important;
+        top: 60px !important;
         line-height: 44px;
         text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+        z-index: 1;
+    }
+    #page-submenu-trigger {
+        line-height: 44px !important;
     }
     .boxed-slider {
         padding-top: 60px;

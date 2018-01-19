@@ -1,0 +1,1970 @@
+#docmsl {
+    text-align: left;
+    width: auto;
+    margin: 0.5em;
+    min-width: 0;
+}
+
+/* Many reset css lists remove these, re-override in custom css if required */
+b, strong {
+    font-weight: bold;
+}
+
+i, em {
+    font-style: italic;
+}
+
+.killfloat {
+    clear: both;
+    line-height: 0;
+    height: 0;
+    margin: 0;
+    font-size: 0;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/* Hides from IE-mac \*/
+* html .clearfix {
+    height: 1%;
+}
+/* End hide from IE-mac */
+
+
+/* re-reset margins and list styles for user added content */
+.text_region ul {
+    list-style-type: disc;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.text_region li {
+    margin: 0.1em 1em;
+}
+
+.text_region h1,
+.text_region h2,
+.text_region h3,
+.text_region h4,
+.text_region h5,
+.text_region h6 {
+    margin: 0.4em 0;
+}
+
+
+/*==========================================
+
+	ASP.NET AJAX
+
+==========================================*/
+.modalBackground {
+    background: #333;
+    filter: alpha(opacity=70);
+    -moz-opacity: 0.7;
+    opacity: 0.7;
+}
+
+.CatchEnter {
+    display: none;
+}
+
+.autocomplete_item {
+    border-top: 1px solid #ccc;
+    padding: 2px;
+    font-size: 85%;
+    overflow: hidden;
+}
+
+.autocomplete_item_highlight {
+    background-color: #333;
+    color: #fff;
+    border-top: 1px solid #ccc;
+    padding: 2px;
+    font-size: 85%;
+    overflow: hidden;
+}
+/*==========================================
+
+	Form elements 
+
+==========================================*/
+#form_controls input.button {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 100%;
+}
+.vp_form input.button_submit {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    white-space: nowrap;
+    margin: 0px;
+    padding: 0 22px !important;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    background: none;
+    background-color: #337ab7;
+    color: #FFF;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: none;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+input.button {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    white-space: nowrap;
+    margin: 0px;
+    padding: 0 22px;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    background: none;
+    background-color: #337ab7;
+    color: #FFF;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: none;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+select {
+    display: inline-block;
+    width: 33%;
+    padding: 8px 14px;
+    font-size: 15px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 2px solid #DDD;
+    border-radius: 0 !important;
+    -webkit-transition: border-color ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s;
+    transition: border-color ease-in-out .15s;
+    height: auto;
+}
+
+input.disabled {
+    color: #aaa;
+}
+
+input.textbox {
+    display: block;
+    width: 100%;
+    height: 38px;
+    padding: 8px 14px;
+    font-size: 15px;
+    line-height: 1.42857143;
+    color: #555555 !important;
+    background-color: #ffffff !important;
+    background-image: none;
+    border: 1px solid #DDD;
+    border-radius: 0 !important;
+    -webkit-transition: border-color ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s;
+    transition: border-color ease-in-out .15s;
+}
+
+    input.textbox:hover {
+        border-color: #666;
+        background-color: #fcfcff;
+    }
+
+    input.textbox:focus {
+        border-color: #666;
+        background-color: #f3f3ff;
+    }
+
+textarea.textbox {
+    margin: 0;
+    padding: 2px 3px;
+    border: 1px solid #999;
+    font-size: 85%;
+    width: 100%;
+}
+
+.error {
+    display: block;
+    margin: 0.2em;
+    padding: 2px 2px 2px 28px;
+    color: #c00;
+    background: #ffc url(images/interface/error.gif) no-repeat 4px 4px;
+    border: 1px solid #c60;
+    border-width: 2px 0;
+}
+
+    .error h1,
+    .error h2,
+    .error h3,
+    .error h4,
+    .error h5,
+    .error h6,
+    .error a {
+        color: #c00;
+        margin: 0;
+    }
+
+.confirm {
+    display: block;
+    margin: 0.2em;
+    padding: 2px 2px 2px 24px;
+    color: #060;
+    background: #cfc url(images/interface/confirm.gif) no-repeat 4px 4px;
+    border: 1px solid #030;
+}
+
+.input_error {
+    color: #c00;
+    background: #FFEBEB;
+    border: 1px solid #EBAFAF;
+}
+
+.error_inline {
+    display: inline-block;
+    margin: 0.2em;
+    padding: 2px 2px 2px 24px;
+    color: #c00 !important;
+    background: transparent url(images/interface/error.gif) no-repeat 4px 4px;
+}
+
+.required {
+    color: #c00;
+}
+
+.form_hint {
+    display: block;
+    clear: both;
+    color: #966;
+    font-size: 80%;
+    margin: 0;
+}
+
+.chkLabel {
+    display: inline;
+    font-weight: normal;
+}
+
+input.datebox {
+    width: 6em;
+}
+
+/* MSL Notification control wrapper style 
+    - used in conjunction with error/warning/information styles below */
+.msl_notification {
+    background-color: #ffc;
+    border: none;
+    margin: 1em 0 1em 0;
+    padding: 0.2em;
+    font-weight: bold;
+}
+
+.msl_warning {
+    display: block;
+    clear: both;
+    margin: 0.2em;
+    padding: 2px 2px 2px 28px;
+    background: url(images/interface/warning.png) no-repeat 4px 4px;
+    border: 1px solid #c60;
+    border-width: 2px 0;
+}
+
+.msl_info {
+    display: block;
+    clear: both;
+    margin: 0.2em;
+    padding: 2px 2px 2px 28px;
+    background: url(images/interface/information.png) no-repeat 4px 4px;
+    border: none;
+    border-width: 2px 0;
+}
+
+.msl_error {
+    display: block;
+    clear: both;
+    margin: 0.2em;
+    padding: 2px 2px 2px 28px;
+    background: url(images/interface/forbidden.png) no-repeat 4px 4px;
+    border: none;
+    border-width: 2px 0;
+}
+/* When info appears as a table header icon */
+th.control .msl_info {
+    padding: 0;
+    width: 16px;
+    margin: 0 auto;
+    border: none;
+    background-position: 50% 50%;
+}
+
+.msl_sitemsg {
+    display: block;
+    margin: 0em;
+    padding: 8px;
+    font-size: 1.5em;
+    background-color: #dfdfdf;
+    text-align: center;
+    border: none;
+    border-width: 2px 0;
+}
+
+.msl-vol-opportunity-apply .msl_notification {
+    margin: 0;
+}
+
+/*==========================================
+
+	Data tables / Editing Grids
+
+==========================================*/
+
+table.msl_table {
+    border: 1px solid #000 !important;
+    width: 99.5%;
+    margin: 1em 0;
+    border-collapse: collapse;
+    clear: both;
+}
+
+    table.msl_table th {
+        background: #000 url(images/interface/msl_table_header.png) repeat-x 0 0;
+        color: #fff;
+        border-bottom: 1px solid #7b7b7b;
+        text-align: left;
+        border-right: 1px solid #666;
+        padding: 3px;
+        font-size: 85%;
+        font-weight: bold;
+    }
+
+        table.msl_table th[align=right] {
+            text-align: right;
+        }
+
+        table.msl_table th[align=center] {
+            text-align: center;
+        }
+
+.msl_table tr {
+    border: 0;
+}
+
+.msl_table .msl_row {
+    background-color: #f9f9f9;
+    color: #000;
+}
+
+.msl_table .msl_altrow {
+    background-color: #fff;
+    color: #000;
+}
+
+.msl_table .msl_row:hover {
+    background-color: #f0f0f0;
+}
+
+.msl_table .msl_altrow:hover {
+    background-color: #f3f3f3;
+}
+
+.msl_table .rowhighlight tr:hover {
+    background-color: #f0f0ff;
+}
+
+.msl_table td {
+    padding: 3px;
+    border-bottom: 1px solid #ccc;
+}
+
+.msl_table .msl_row td {
+    border-right: 1px solid #eee;
+}
+
+.msl_table .msl_altrow td {
+    border-right: 1px solid #eee;
+}
+
+.msl_table td.number, .msl_table td[align=right] {
+    text-align: right;
+}
+
+.gvPage td {
+    padding: 1px 2px;
+}
+
+.msl_table th.date {
+    width: 8em;
+    white-space: nowrap;
+}
+
+.msl_table td.control {
+    text-align: center;
+}
+
+.msl_table th.control {
+    width: 18px;
+    text-align: center;
+    font-size: 70%;
+    font-weight: bold;
+    color: #999;
+}
+
+/* Table col shrinks to fit header text without wrapping */
+.msl_table th.shrinky {
+    width: 18px;
+    white-space: nowrap;
+}
+
+.msl_table th.control-edit {
+    width: 42px;
+}
+/* Command fields - hide text */
+.msl_table th.control {
+    font-size: 0;
+    text-indent: -5000px;
+    overflow: hidden;
+}
+
+.msl_table a[class^="msl_"] {
+    text-indent: -5000px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.msl_table a.msl_warning, .msl_table a.msl_error {
+    text-indent: 0;
+}
+
+/*=======================================================
+
+	Comments
+
+=======================================================*/
+.comment_panel {
+    clear: both;
+}
+
+/* temp while the comment box is a textarea not an editor instance */
+.comment textarea.textbox {
+    width: 100%;
+}
+
+dl.comments {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+    dl.comments dt {
+        width: 100px;
+        float: right;
+        clear: both;
+        margin: 0 0 1em 0;
+        padding: 5px 5px 5px 15px;
+        background: url(images/comment_right.gif) no-repeat 0 0;
+        text-align: center;
+    }
+
+    dl.comments dd {
+        display: block;
+        min-height: 7em;
+        margin: 0 120px 0.5em 0;
+        border: 1px solid #eee;
+        padding: 0;
+        clear: none;
+    }
+
+    dl.comments dt img.avatar {
+        display: block;
+        margin: 0 auto;
+        width: 50px;
+    }
+
+    dl.comments span.comment_details {
+        display: block;
+        background: #eee;
+        color: #999;
+        position: relative;
+        padding: 0.25em 0 0.25em 0.6em;
+        font-size: 70%;
+    }
+
+    dl.comments span.comment_date {
+    }
+
+    dl.comments span.comment_delete {
+        display: block;
+        position: absolute;
+        top: 2px;
+        right: 5px;
+    }
+
+        dl.comments span.comment_delete a {
+            color: #c33;
+            text-decoration: none;
+        }
+
+            dl.comments span.comment_delete a:hover {
+                text-decoration: underline;
+            }
+
+    dl.comments span.comment {
+        display: block;
+        padding: 0.5em;
+    }
+
+#add_comment dd {
+    border-color: #09c;
+}
+
+#add_comment span.comment_details {
+    background-color: #09c;
+}
+
+dl.comments span.comment_details h3 {
+    color: #fff;
+    margin: 0;
+    font-size: 85%;
+    padding: 0;
+}
+
+#add_comment dt {
+    background-image: url(images/comment_right_on.gif)
+}
+/*=======================================================
+
+	Form Layouts
+
+=======================================================*/
+
+
+
+.mvWrapper {
+    margin: 1em 0;
+    width: 100%;
+}
+
+.mvMenu {
+    position: relative;
+    display: block;
+    float: left;
+    margin: 0 0 -1px 0;
+    padding: 0;
+    width: 100%;
+    border-left: 1px solid #999;
+}
+
+    .mvMenu ul {
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .mvMenu li {
+        display: block;
+        float: left;
+        margin: 0 !important;
+        padding: 3px 0.5em;
+        border: 1px solid #999;
+        border-left: none;
+        background: #f3f3f3 url(images/interface/tab.gif) repeat-x 0 0;
+    }
+
+        .mvMenu li a {
+            display: block;
+            float: left;
+            text-decoration: none;
+            color: #666;
+        }
+
+        .mvMenu li.right {
+            float: right;
+            margin-right: 1px;
+            border-left: 1px solid #999;
+        }
+
+        .mvMenu li a.current {
+            color: #c00;
+            font-weight: bold;
+            border-bottom-color: #fff;
+        }
+
+        .mvMenu li a.disabled {
+            color: #ccc;
+        }
+
+.mv {
+    clear: both;
+    border: 1px solid #999;
+    padding: 0;
+}
+
+.mvNav {
+    clear: both;
+    background: #ccc;
+    border: 1px solid #999;
+    border-top: 0;
+    padding: 3px 1em;
+    text-align: right;
+}
+
+.vpForm {
+    display: block;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+    .vpForm p {
+        padding: 0.5em;
+        margin: 0;
+        color: #333;
+    }
+
+    .vpForm fieldset {
+        position: relative;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        border-bottom: 1px solid #f3f3f3;
+    }
+
+    .vpForm legend {
+        margin: 1em 0 0.5em 0;
+        padding: 0;
+        color: #333;
+        font-size: 1.2em;
+        font-weight: bold;
+        font-family: Tahoma;
+    }
+
+    .vpForm .vpFormPair {
+        margin-left: 0em;
+        padding: 0.5em;
+        position: relative;
+        background: #f3f3f3 url(images/vpFormPairBG.jpg) repeat-y 0 0;
+        border-left: 1px solid #ccc;
+        border-top: 1px solid #ccc;
+        z-index: 1;
+    }
+
+    .vpForm .vpDate,
+    .vpForm .vpPopup {
+        z-index: 100;
+    }
+
+    .vpForm .vpFormSubmit {
+        margin-left: 15em;
+        padding: 0.5em;
+        position: relative;
+        background: #eee;
+        border-top: 1px solid #999;
+        border-left: 1px solid #ccc;
+    }
+
+    .vpForm .title {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: -15.5em;
+        width: 13.5em;
+        padding: 0.5em 1em 0.5em 0.5em;
+        text-align: right;
+        font-weight: bold;
+        color: #666;
+        font-style: italic;
+        border-top: 1px solid #f3f3f3;
+    }
+
+
+.vpFormFlat {
+    display: block;
+}
+
+    .vpFormFlat .vpFormPair {
+        display: block;
+    }
+
+    .vpFormFlat .vpFormSubmit {
+    }
+
+    .vpFormFlat .title {
+        font-weight: bold;
+        display: block;
+    }
+
+
+.vp_form {
+    width: 99%;
+    padding: 0;
+    margin: 0;
+}
+
+    .vp_form .vpFormPair,
+    .vp_form .vpFormSubmit {
+        display: block;
+        padding: 7px 15px 7px 8px;
+        margin: 0 2px;
+        overflow: visible;
+    }
+    /* Make sure calendar extender is displayed above other form controls */
+    .vp_form .vpDate,
+    .vp_form .vpPopup {
+    }
+
+    /*.vp_form .vpFormSubmit {
+        background: #f9f9f9;
+        border-top: 1px solid #eee;
+        margin: 1em 0 0 0;
+        padding: 1em;
+    }*/
+
+    .vp_form input.button_submit {
+        /*background: url(images/icons/16/check2.gif) no-repeat 0 50%;*/
+        padding-left: 16px;
+    }
+
+    .vp_form input.button_cancel {
+        background: url(images/icons/16/delete2.gif) no-repeat 0 50%;
+        padding-left: 16px;
+        border-color: #ccc;
+        font-weight: normal;
+    }
+
+    .vp_form .title {
+        font-weight: bold;
+        margin-bottom: 0.5em;
+        color: #333;
+    }
+
+    .vp_form .vp_highlight {
+        /*background-image: url(images/form_bg.gif);*/
+        background: #FFF;
+    }
+
+
+    .vp_form p {
+        padding: 0.5em;
+        margin: 0;
+        color: #333;
+    }
+
+    .vp_form fieldset {
+        margin: 1em 0;
+        padding: 0.25em 1em;
+        border: 0;
+        border-top: 1px dotted #ccc;
+    }
+
+    .vp_form legend {
+        color: #666;
+        font-size: 1em;
+        font-weight: bold;
+        font-style: italic;
+        padding: 0 0.25em;
+        margin: 0.5em 0;
+        background: #fff;
+    }
+
+    .vp_form .vp_content {
+        display: block;
+        margin: 5px 0;
+    }
+
+    .vp_form h3.form_title {
+        color: #333;
+        display: block;
+        padding: 1em 10px;
+        margin: 0;
+        position: relative;
+        z-index: 1;
+        background: #f9f9f9;
+        border-bottom: 1px solid #eee;
+    }
+
+    .vp_form .vpFormPair:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+
+    .vp_form .vp_hint {
+        display: block;
+        color: #666;
+        font-size: 85%;
+    }
+
+
+    .vp_form input.textbox,
+    .vp_form textarea.textbox {
+        display: block;
+        width: 100%;
+        height: 38px;
+        padding: 8px 14px;
+        font-size: 15px;
+        line-height: 1.42857143;
+        color: #555555 !important;
+        background-color: #ffffff !important;
+        background-image: none;
+        border: 2px solid #DDD;
+        border-radius: 0 !important;
+        -webkit-transition: border-color ease-in-out .15s;
+        -o-transition: border-color ease-in-out .15s;
+        transition: border-color ease-in-out .15s;
+    }
+
+    .vp_form input.small {
+        width: 100%;
+    }
+
+    .vp_form input.medium {
+        width: 100%;
+    }
+
+    .vp_form input.large {
+        width: 100%;
+    }
+
+    .vp_form textarea.small {
+        width: 100%;
+        height: 3em;
+    }
+
+    .vp_form textarea.medium {
+        width: 100%;
+        height: 10em;
+    }
+
+    .vp_form textarea.large {
+        width: 100%;
+        height: 20em;
+    }
+
+    .vp_form textarea.max {
+        width: 100%;
+    }
+
+    .vp_form input.date_date {
+        width: 5.5em;
+    }
+
+    .vp_form input.date_time {
+        width: 3em;
+    }
+
+    .vp_form input.address {
+        width: 20em;
+    }
+
+    .vp_form input.post_code {
+        width: 8em;
+    }
+
+    .vp_form label {
+        margin-left: 0; /* Bootstrap reset */
+    }
+
+/* hide hints icon on forms that are not in the new style yet */
+.iconopenhints, .iconclosehints {
+    display: none;
+}
+
+#form_controls {
+    text-align: center;
+}
+
+ /*   #form_controls input.button {
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
+        font-size: 100%;
+    }*/
+
+.vp_form span.vp_range {
+    display: block;
+    float: left;
+    white-space: nowrap;
+}
+
+.vp_form span.vp_rangeitem {
+    white-space: nowrap;
+}
+
+.vp_form span.vp_rangeseperator {
+}
+
+.vp_form .form_error {
+    display: inline;
+    color: #c00;
+    font-size: 85%;
+}
+
+
+#passwordStrength {
+    display: block;
+    visibility: hidden;
+    width: 224px;
+}
+
+    #passwordStrength span {
+        display: block;
+        float: left;
+        width: 68px;
+        border: 1px solid #ccc;
+        text-align: center;
+        font-size: 85%;
+        padding: 2px;
+        color: #ccc;
+        background-color: #fff;
+    }
+
+    #passwordStrength.pass_weak span.password_weak {
+        color: #fff;
+        background-color: #c00;
+    }
+
+    #passwordStrength.pass_ok span.password_ok {
+        color: #666;
+        background-color: #cc0;
+    }
+
+    #passwordStrength.pass_good span.password_good {
+        color: #fff;
+        background-color: #393;
+    }
+
+/* 48px icon grid layout */
+#msl ul.msl_linkgrid {
+    display: block;
+    clear: both;
+    list-style: none;
+    width: 90%;
+    margin: 1em;
+}
+
+    #msl ul.msl_linkgrid li {
+        display: inline;
+    }
+
+        #msl ul.msl_linkgrid li a {
+            display: block;
+            float: left;
+            position: relative;
+            width: 130px;
+            min-height: 3.6em;
+            overflow: visible;
+            padding-top: 58px;
+            margin: 5px;
+            text-decoration: none;
+            text-align: center;
+            background-repeat: no-repeat;
+            background-position: 50% 5px;
+        }
+
+            #msl ul.msl_linkgrid li a:hover {
+                background-color: #94b8dc;
+            }
+
+            #msl ul.msl_linkgrid li a span {
+                font-size: 85%;
+                display: block;
+                color: #666;
+                display: block;
+            }
+
+ul.msl_linkgrid li a.msl_linkgrid_news {
+    background-image: url(images/icons/48/newspaper.png);
+}
+
+ul.msl_linkgrid li a.msl_linkgrid_events {
+    background-image: url(images/icons/48/calendar_31.png);
+}
+
+ul.msl_linkgrid li a.msl_linkgrid_tickets {
+    background-image: url(images/icons/48/eventtickets.png);
+}
+
+ul.msl_linkgrid li a.msl_linkgrid_pages {
+    background-image: url(images/icons/48/text_rich_colored.png);
+}
+
+ul.msl_linkgrid li a.msl_linkgrid_details {
+    background-image: url(images/icons/48/about.png);
+}
+
+ul.msl_linkgrid li a.msl_linkgrid_members {
+    background-image: url(images/icons/48/user_information.png);
+}
+
+ul.msl_linkgrid li a.msl_linkgrid_groups {
+    background-image: url(images/icons/48/users2.png);
+}
+
+ul.msl_linkgrid li a.msl_linkgrid_signups {
+    background-image: url(images/icons/48/hand_point2.gif);
+}
+
+ul.msl_linkgrid li a.msl_linkgrid_api {
+    background-image: url(images/icons/48/gear.png)
+}
+
+ul.msl_linkgrid li a.msl_linkgrid_email {
+    background-image: url(images/icons/48/mail_write.png);
+}
+
+ul.msl_linkgrid li a.msl_linkgrid_sms {
+    background-image: url(images/icons/48/mobilephone2.png);
+}
+
+ul.msl_linkgrid li a.msl_linkgrid_poll {
+    background-image: url(images/icons/48/chart_pie2.png);
+}
+
+ul.msl_linkgrid li a.msl_linkgrid_reports {
+    background-image: url(images/icons/48/document_info.png);
+}
+
+ul.msl_linkgrid li a.msl_linkgrid_resources {
+    background-image: url(images/icons/48/documents.png);
+}
+
+ul.msl_linkgrid li a.msl_linkgrid_permissions {
+    background-image: url(images/icons/48/user1_lock.png);
+}
+
+ul.msl_linkgrid li a.msl_linkgrid_jobs {
+    background-image: url(images/icons/48/desk.png);
+}
+
+ul.msl_linkgrid li a.msl_linkgrid_tripreg {
+    background-image: url(images/icons/48/trips.png);
+}
+
+ul.msl_linkgrid li a.msl_linkgrid_meetings {
+    background-image: url(images/icons/48/messages.png);
+}
+
+ul.msl_linkgrid li a.msl_linkgrid_products {
+    background-image: url(images/icons/48/product.png);
+}
+
+ul.msl_linkgrid li a.msl_linkgrid_teamsheets {
+    background-image: url(images/icons/48/teamsheets.png);
+}
+
+ul.msl_linkgrid li a.msl_linkgrid_newpage {
+    background-image: url(images/icons/48/window_new.png);
+}
+
+ul.msl_linkgrid li a.msl_linkgrid_editpage {
+    background-image: url(images/icons/48/window_edit.png);
+}
+
+ul.msl_linkgrid li a.msl_linkgrid_sitedesign {
+    background-image: url(images/icons/48/window_colors.png);
+}
+
+ul.msl_linkgrid li a.msl_linkgrid_sitenavigation {
+    background-image: url(images/icons/48/window_sidebar.png);
+}
+
+ul.msl_linkgrid li a.msl_linkgrid_sitetoolbars {
+    background-image: url(images/icons/48/window_dialog.png);
+}
+
+ul.msl_linkgrid li a.msl_linkgrid_siteimages {
+    background-image: url(images/icons/48/photo_scenery.png);
+}
+
+ul.msl_linkgrid li a.msl_linkgrid_terms {
+    background-image: url(images/icons/48/documents.png);
+}
+
+ul.msl_linkgrid li a.msl_linkgrid_sgf {
+    background-image: url(images/icons/48/sgf-48.png);
+}
+
+/*------------------------------------------------------------------------------------------------------------
+The following are override styles specifically for the admin pages only
+--------------------------------------------------------------------------------------------------------------*/
+
+/* ------------------------------- 
+ admin page general styles 
+ --------------------------------- */
+
+/* padding on admin page container */
+.msl_admin_page {
+    padding: 1em;
+}
+
+    /* Hide breadcrumb on all admin pages. */
+    .msl_admin_page .breadcrumb {
+        display: none;
+    }
+
+/* text styles for toolbar hyperlinks */
+div#msl_toolbar {
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+    div#msl_toolbar ul {
+        padding: 0;
+        margin: 0;
+        float: left;
+    }
+
+        div#msl_toolbar ul li {
+            float: left;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+
+            div#msl_toolbar ul li a {
+                display: block;
+                float: left;
+                line-height: 1em;
+                height: 1em;
+                padding: 2px 10px 2px 10px;
+                margin: 0;
+                text-decoration: none;
+                text-align: center;
+                border-left: 1px solid #666;
+            }
+
+            /* toolbar text-only style */
+            div#msl_toolbar ul li span {
+                display: block;
+                float: left;
+                line-height: 1em;
+                height: 1em;
+                padding: 2px 10px 2px 10px;
+                margin: 0;
+                text-decoration: none;
+                text-align: center;
+                border-left: 1px solid #666;
+            }
+
+            div#msl_toolbar ul li a.msl_toolbarbutton_firstitem {
+                border: none;
+                padding-left: 0;
+            }
+
+            div#msl_toolbar ul li a.msl_toolbarbutton_selected {
+                font-weight: bold;
+                text-decoration: none;
+                font-size: 120%;
+            }
+
+/* --------------------------- 
+ admin page form styles
+ --------------------------- */
+
+/* clear containing divs */
+@media all and (min-width:992px) {
+    .msl_admin_page .vp_content {
+        padding: 0;
+        margin: 0 0 0 11em;
+    }
+}
+
+.msl_admin_page .vp_form .vpFormPair {
+    float: left;
+    clear: left;
+    width: 100%;
+}
+
+.page_widget .msl_admin_page .vp_form .vpFormPair {
+    float: none;
+}
+
+/* checkbox list */
+.msl_admin_page .vp_form .checkbox table {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+    .msl_admin_page .vp_form .checkbox table input {
+        margin-left: 0;
+    }
+
+/* style the fieldsets */
+.msl_admin_page .vp_form fieldset {
+    border: solid 1px #ccc;
+    padding: 0.5em;
+    margin: 0;
+}
+
+.msl_admin_page .vp_form legend {
+    font-style: normal;
+    font-weight: bold;
+    padding: 0.3em;
+}
+
+/* style the labels*/
+.msl_admin_page .vp_form .title {
+    display: block;
+    margin: 0 0 0.5em;
+    padding: 0;
+    clear: both;
+    font-weight: normal;
+}
+
+@media all and (min-width:992px) {
+    .msl_admin_page .vp_form .title {
+        float: left;
+        width: 10em;
+        text-align: right;
+        margin: 0 1em 0 0;
+    }
+}
+
+/* set widths for input fields */
+.msl_admin_page .vp_form input {
+    float: left;
+    display: block;
+    width: 15em;
+    height: 30px;
+    padding: 5px;
+    margin: 0;
+}
+
+    .msl_admin_page .vp_form input + label {
+        float: left;
+    }
+
+.msl_admin_page .vp_form textarea {
+    float: left;
+    margin-right: 5px;
+}
+
+.msl_admin_page .vp_form select {
+    float: left;
+}
+
+.msl_admin_page .vp_form label {
+    margin: 0 1em 0 0.5em;
+}
+
+/* Override default widths for event page date recurrence */
+.vp_form [id*="DateRecurrence"] .vpFormPair input, .vp_form [id*="DateRecurrence"] .vpFormPair select {
+    width: auto;
+    float: none;
+    display: inline-block;
+}
+
+/* width defaults to 15em as above, but can use these to change that */
+@media all and (min-width:768px) {
+    .msl_admin_page .vp_form input.small {
+        width: 10em;
+    }
+
+    .msl_admin_page .vp_form input.medium {
+        width: 20em;
+    }
+
+    .msl_admin_page .vp_form input.large {
+        width: 30em;
+    }
+
+    .msl_admin_page .vp_form textarea.small {
+        width: 10em;
+        height: 3em;
+    }
+
+    .msl_admin_page .vp_form textarea.medium {
+        width: 20em;
+        height: 10em;
+    }
+
+    .msl_admin_page .vp_form textarea.large {
+        width: 30em;
+        height: 20em;
+    }
+}
+/* special styles for the date control*/
+.msl_admin_page .vp_form input.date_date {
+    float: left;
+    width: 5.5em;
+}
+
+.msl_admin_page .vp_form input.date_time {
+    float: left;
+    width: 3em;
+}
+
+.msl_admin_page .vp_range img {
+    display: block;
+    float: left;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    margin-left: 0.25em;
+}
+
+.msl_admin_page .vp_range span.vp_rangeseperator {
+    display: block;
+    float: left;
+    margin-right: 0.5em;
+    margin-left: 0;
+}
+
+.msl_admin_page .vp_content span.vp_rangeseperator {
+    display: block;
+    float: left;
+    margin: 0 0.25em;
+}
+
+.msl_admin_page .vp_content .msl_datepicker {
+    float: left;
+}
+
+/* allows for checkbox text to be set using either title or text */
+@media all and (min-width:992px) {
+    .msl_admin_page .vp_form .checkbox {
+        margin-left: 11em;
+    }
+}
+
+.msl_admin_page .vp_form .checkbox input {
+    width: auto;
+    margin: 0;
+}
+/*.msl_admin_page .vp_form .checkbox .title{clear:none;text-align:left;width:auto;margin-left:0.5em;} */
+.msl_admin_page .vp_form .checkbox label {
+    clear: none;
+    text-align: left;
+    width: auto;
+    display: block;
+    float: left;
+    margin-right: 0;
+    padding-left: 0;
+}
+
+/* special styles for the editor control */
+.msl_admin_page .editor {
+    clear: left;
+}
+/*.msl_admin_page .editor.sidebyside{float:left;clear:none;width:500px;} */
+@media all and (min-width:992px) {
+    .msl_admin_page .editor.sidebyside {
+        clear: none;
+        padding-left: 11em;
+        width: auto;
+    }
+}
+/* if the 'fullwidth' AdminLayout is used */
+.msl_admin_page .vpFormPair.fullwidth {
+    float: none;
+    width: auto;
+}
+
+@media all and (min-width:992px) {
+    .msl_admin_page .fullwidth .hint-text, .msl_admin_page .fullwidth .hint-text:hover {
+        margin-left: 11em;
+        margin-top: 1em;
+    }
+}
+/* special styles for the news layout control*/
+.msl_admin_page .vp_form .control_editor_newslayout select {
+    clear: both;
+}
+
+.msl_admin_page .vp_form .control_editor_newslayout .vp_content {
+    float: left;
+}
+
+/* styles the dropdown icon for select group control */
+.msl-selectgroup-image {
+    float: left;
+}
+
+    .msl-selectgroup-image:hover {
+        cursor: pointer;
+    }
+
+/* Forces the expand and grouping type icons to have width*/
+
+[id*="tvGroups"] td a img {
+    min-width: 20px;
+}
+
+/* style action buttons */
+.msl_admin_page .vp_form .vpFormSubmit {
+    clear: both;
+    margin: 0;
+    padding: 0 0 0 13em;
+    margin: 1em 0 1em 0;
+    background: none;
+    border: none;
+}
+
+.msl_admin_page .vp_form fieldset .vpFormSubmit {
+    padding: 0 0 0 11.75em;
+    margin: 0.5em 0 1em 0
+}
+
+.msl_admin_page .vp_form input.button {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    white-space: nowrap;
+    margin: 0px;
+    padding: 0 22px;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #337ab7;
+    color: #FFF;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: none;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+    .msl_admin_page .vp_form input.button:hover {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        outline: none;
+        white-space: nowrap;
+        margin: 0px;
+        padding: 0 22px;
+        font-size: 12px;
+        height: 30px;
+        line-height: 30px;
+        background-color: #363b40;
+        color: #FFF;
+        font-weight: 600;
+        letter-spacing: 1px;
+        border: none;
+        text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    }
+
+/* align error messages to inputs */
+.msl_admin_page .vp_form .form_error {
+    margin-left: 13em;
+}
+
+.msl_admin_page .vp_form .ad_preview_box {
+    float: left;
+}
+
+/* styles for form hints */
+.msl_admin_page .hint-text, .msl_admin_page .defaultdisplay {
+    display: block;
+    float: left;
+    position: relative;
+}
+
+.msl_admin_page .vp_form .hint-text span {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    display: block;
+}
+
+.msl_admin_page .vp_form .vp_highlight .hint-text span, .msl_admin_page .hint-text:hover span, .msl_admin_page .vp_form .defaultdisplay span {
+    margin-left: 0em;
+    padding: 10px;
+    width: 250px;
+    height: auto;
+    overflow: visible;
+    position: absolute;
+    left: 25px;
+    top: -15px;
+    line-height: 1.3;
+    border-radius: 3px 3px 3px 3px;
+    box-shadow: 4px 2px 8px rgba(0, 0, 0, 0.1);
+    border: 3px solid #acde8e;
+    z-index: 2;
+    background: #e0fecf;
+}
+
+.msl_admin_page .hint-text:hover, .msl_admin_page .defaultdisplay {
+    z-index: 2;
+}
+
+/* styling for 'always on' and 'initially on' hints */
+.msl_admin_page .vp_form .vp_hintsdisplaying {
+    display: block;
+    clear: both;
+    margin-left: 0em;
+    padding: 5px 0 0 0;
+}
+
+.msl_admin_page .vp_form .defaultdisplay span a.closehint {
+    position: absolute;
+    text-indent: -3000px;
+    top: -12px;
+    right: -12px;
+    padding-top: 12px;
+    padding-left: 15px;
+}
+
+.msl_admin_page .vp_form .hint-text span a.closehint {
+    display: none;
+}
+
+/* ------------------------------------
+  Poll Admin page colour picker styles 
+ --------------------------------------*/
+
+.vp_content.colour-preview {
+    float: left;
+    width: 3.5em;
+    margin: 0 0.5em 0 0;
+}
+
+.vp_form .vp_content.colour-preview + input {
+    width: 11em;
+}
+
+/* ------------------------------------
+  Admin page data tables and editing grids 
+ --------------------------------------*/
+
+.msl_admin_page table.msl_table {
+    border: 1px solid #999 !important;
+    width: 99.5%;
+    margin: 1em 0;
+    border-collapse: collapse;
+}
+
+    .msl_admin_page table.msl_table th {
+        background: #d7d7d7;
+        color: #000;
+        border-bottom: 1px solid #999;
+        text-align: left;
+        border-right: 1px solid #999;
+        padding: 5px;
+        font-size: 85%;
+        font-weight: bold;
+    }
+
+.msl_admin_page .msl_table tr {
+    border: 0;
+}
+
+.msl_admin_page .msl_table .msl_row {
+    background-color: #eee;
+    color: #000;
+}
+
+.msl_admin_page .msl_table .msl_altrow {
+    background-color: #fff;
+    color: #000;
+}
+
+.msl_admin_page .msl_table .msl_row:hover {
+    background-color: #d2efc5;
+}
+
+.msl_admin_page .msl_table .msl_altrow:hover {
+    background-color: #d2efc5;
+}
+
+.msl_admin_page .msl_table .rowhighlight tr:hover {
+    background-color: #d2efc5;
+}
+
+.msl_admin_page .msl_table td {
+    padding: 5px;
+    border-bottom: none;
+}
+
+.msl_admin_page .msl_table .msl_row td {
+    border-right: none;
+}
+
+.msl_admin_page .msl_table .msl_altrow td {
+    border-right: none;
+}
+
+.msl_admin_page .msl_table td.number {
+    text-align: right;
+}
+
+.msl_admin_page .msl_table th.number {
+    text-align: right;
+}
+
+.msl_admin_page .gvPage td {
+    padding: 1px 2px;
+}
+
+.msl_admin_page .msl_table th.date {
+    width: 8em;
+    white-space: nowrap;
+}
+
+.msl_admin_page .msl_table td.control {
+    text-align: left;
+}
+
+.msl_admin_page .msl_table th.control {
+    width: 18px;
+    text-align: left;
+    font-size: 85%;
+    font-weight: bold;
+    color: #000;
+}
+
+.msl_admin_page .msl_table th.control-edit {
+    width: 42px;
+}
+
+.msl_admin_page .msl_table td input {
+    width: auto;
+}
+
+.msl_admin_page .vp_content td input {
+    width: auto;
+}
+
+.msl_admin_page table.msl_table tr.footer td {
+    background: #d7d7d7;
+    color: #000;
+    border-top: 1px solid #999;
+    text-align: left;
+    border-right: 1px solid #999;
+    padding: 5px;
+    font-size: 85%;
+    font-weight: bold;
+}
+
+.msl_admin_page table.msl_table tr.footer-right td {
+    background: #d7d7d7;
+    color: #000;
+    border-top: 1px solid #999;
+    text-align: right;
+    border-right: 1px solid #999;
+    padding: 5px;
+    font-size: 85%;
+    font-weight: bold;
+}
+
+.msl_admin_page .msl_table caption {
+    font-weight: bold;
+    padding: 5px;
+    background: #d7d7d7;
+    border-top: 1px solid #999;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+    border-collapse: collapse;
+}
+
+.msl_admin_page div.pagesize {
+    float: right;
+    width: 20%;
+}
+
+/* -------------------------------------------------------------- 
+ report page styles
+ ---------------------------------------------------------------- */
+
+/* Sets height of report display */
+.msl_admin_page .report_viewer iframe {
+    height: 600px !important;
+}
+
+/* Wrapper div for report viewer control */
+.msl_admin_page #report_viewer_wrapper {
+    padding-top: 16px;
+    margin-top: 2.5em;
+    overflow-y: scroll;
+}
+
+
+/* ------------------------------------------------------------- 
+ filter panel styles
+ --------------------------------------------------------------- */
+
+.msl_admin_page .filter_panel {
+    border: solid 1px #999;
+    padding: 0.5em;
+    background: #eee;
+    color: #000;
+}
+
+    .msl_admin_page .filter_panel select, .filter_panel input {
+        margin-right: 0.5em;
+        margin-top: 0.5em;
+    }
+
+    .msl_admin_page .filter_panel .button {
+        margin-left: 1em;
+    }
+
+.filter_panel:before, .filter_panel:after {
+    content: "";
+    display: table;
+}
+
+.filter_panel:after {
+    clear: both
+}
+
+/* ------------------------------------------------------------- 
+ panel containing 'action' links
+ --------------------------------------------------------------- */
+.msl_admin_page .actions_panel {
+    margin: 1em 0 1em 0
+}
+
+/* -------------------------------------------------------------
+ AJAX Control Toolkit accordion styles
+----------------------------------------------------------------- */
+.msl_admin_page .ac-header {
+    border: solid 1px #999;
+    background: #eee;
+    padding: 1em;
+}
+
+.msl_admin_page .ac-selected-header {
+    border: solid 1px #999;
+    background: #eee;
+    padding: 1em;
+    font-weight: bold;
+}
+
+.msl_admin_page .ac-content {
+    border: solid 1px #999;
+    padding: 1em;
+}
+
+    /* nested accordion styles */
+    .msl_admin_page .ac-content .ac-header {
+        border: solid 1px #999;
+        background: #ccc;
+        padding: 1em;
+    }
+
+    .msl_admin_page .ac-content .ac-selected-header {
+        border: solid 1px #999;
+        background: #ccc;
+        padding: 1em;
+        font-weight: bold;
+    }
+
+
+/* temp - local testing */
+.ac-header {
+    border: solid 1px #999;
+    background: #eee;
+    padding: 1em;
+}
+
+.ac-selected-header {
+    border: solid 1px #999;
+    background: #eee;
+    padding: 1em;
+    font-weight: bold;
+}
+
+.ac-content {
+    border: solid 1px #999;
+    padding: 1em;
+}
+
+
+
+
+
+.msl_admin_page .vp_content.editor {
+    margin: 0;
+}
+
+/* special styles for the postal address control */
+
+.msl_admin_page .multilineaddress {
+    float: left;
+    display: block;
+    width: 10em;
+    text-align: right;
+    margin: 0 1em 0 0;
+    padding: 0;
+    clear: both;
+    font-weight: normal;
+}
+
+.msl_admin_page .multilineaddress {
+    margin-bottom: 0.5em;
+}
+
+.msl_admin_page .clear_address {
+    float: left;
+    clear: both;
+}
+
+.msl_admin_page .vp_form input .countrydropdown {
+    display: inline-block;
+    width: 15em;
+    padding: 0;
+    margin: 0;
+}
+
+.form-address .vp_content {
+    float: left;
+}
+
+.msl_admin_page .form-address .vp_content {
+    float: none;
+    margin-top: 2em;
+}
+
+.form-address .vp_content label {
+    width: 8em;
+    display: inline-block;
+    margin: 0 0 0.5em;
+}
+
+.msl_admin_page .form-address .vp_content label {
+    margin: 0 1em 1em -9em;
+}
+
+.form-address .vp_content select, .form-address .vp_content input {
+    margin-bottom: 0;
+}
+
+.form-address .clear_address {
+    display: inline-block;
+    color: #900;
+}
+
+/* fixing the checkbox list... 
+.msl_admin_page .vp_form input[type=checkbox] {margin: 0 0.5em 0 0;}
+.msl_admin_page .vp_content table td {padding: 0.5em 2em 0.5em 0;} */
+
+/* spacing div for single buttons below other controls e.g. select organisation */
+.spacing-divider {
+    padding-top: 12px;
+}
+
+/* add scrollbars to checkbox lists */
+
+.msl_admin_page .scroll_checkbox_list {
+    overflow: auto;
+    border: solid 1px;
+    width: 100%;
+    height: 200px;
+}
+
+.msl_admin_page .scroll_gridview {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 98%;
+    height: 300px;
+    padding-right: 15px;
+    margin-bottom: 20px;
+}
+
+.msl_admin_page .info_panel {
+    background-color: InfoBackground;
+    color: InfoText;
+    font-weight: bold;
+    padding: 6px;
+    margin-top: 6px;
+}
+
+.msl_admin_page .popup, .vp_form.popup {
+    width: auto;
+    border: 1px solid #999;
+    background: #fff;
+    padding: 6px;
+    z-index: 10001 !important;
+    max-height: 90%;
+    max-width: 95%;
+    overflow-y: scroll;
+}
+
+.modalBackground {
+    z-index: 10000 !important;
+}
+
+
+/* style for 'add new' links in the middle of forms */
+.msl_admin_page .msl-addnew {
+    float: left;
+    padding: 8px 0;
+    font-size: smaller;
+}
+/* style for review registrations button keys */
+.button_key {
+    background: #eee;
+    padding: 1em;
+    float: right;
+}
+
+    .button_key ul {
+        display: inline;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .button_key li {
+        display: inline;
+        list-style: none;
+        padding: 0.2em;
+        margin: 0;
+    }
+
+/* CollapsiblePanel extender classes */
+.msl_admin_page .showhidelink {
+    background: none repeat scroll 0 0 #ffc;
+    border: 1px solid #fc0;
+    color: #333333;
+    display: block;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0.5em;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+    .msl_admin_page .showhidelink:hover {
+        background: #ffa;
+        border: 1px solid #ca0;
+        box-shadow: 0 0 3px 0 #ccc;
+    }
+
+/* survey checkboxlist/radiolist */
+.vp_content ul {
+    list-style: none;
+}
+
+/* containers for plain text, preserve spacing and newlines */
+.multi-line-plain-text {
+    white-space: pre-wrap;
+}
+
+.msl-clearfloat {
+    clear: both;
+}
+
+.msl_admin_page .vp_content .image_preview {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+/* CKEditor style overrides */
+body .cke_combopanel {
+    width: 250px;
+}
