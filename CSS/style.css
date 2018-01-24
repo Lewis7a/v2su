@@ -3330,6 +3330,12 @@ body.stretched .container-fullwidth .breadcrumb { right: 60px !important; }
 .intro-support-block .col-sm-4 {
     border: 1px solid #EEE;
     overflow: hidden;
+    width: 33.3%;
+}
+@media (max-width: 479px) {
+    .intro-support-block .col-sm-4 width: 100%; {
+        width: 100%;
+    }
 }
 
 .col-padding {

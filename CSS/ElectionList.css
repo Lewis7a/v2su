@@ -1,0 +1,117 @@
+/* Election widget */
+
+.election {
+    border: none;
+    margin: 10px 0 20px;
+    border-bottom: 1px solid #ccc;
+    padding: 0;
+}
+
+    .election h3 {
+        color: #333;
+        background-color: transparent;
+        margin: 0;
+        padding: 10px 3em 10px 0;
+        border-bottom-color: #c0c0c3;
+        position: relative;
+    }
+
+    .election a.edit_election {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-top: -0.5em;
+        line-height: 1;
+        font-size: 14px;
+    }
+
+    .election p {
+        margin: 10px 0;
+    }
+
+        .election p.msl-election-desc {
+            padding: 13px 15px 12px;
+            font-size: 1em;
+            background: #B9DFF4;
+            margin: 0;
+            border-color: #B9DFF4;
+        }
+
+        .election > p, .election p.msl-election-organisation {
+            padding: 10px 10px 10px 34px;
+            border-bottom: 1px solid #ccc;
+            margin: 0;
+            font-size: 0.9em;
+            background-repeat: no-repeat;
+        }
+
+        .election p.msl-election-organisation {
+            background-image: url(../../images/interface/information.png);
+            background-position: 11px 11px;
+            /* background-color: #eef; */
+        }
+
+            .election p.msl-election-organisation a {
+                color: #06c;
+            }
+
+    .election .msl-election-positions {
+        background-image: url(../../images/elections/icons-sprite.png);
+        background-position: -2px -42px;
+    }
+
+    .election [class*="times"] {
+        background-image: url(../../images/elections/clock.png);
+        background-position: 8px 9px;
+    }
+
+    .election dl {
+        margin: 10px 0;
+        padding: 14px 18px;
+        background: #f7f7f9;
+        border: 1px solid #e0e0e3;
+    }
+
+body .election dt {
+    margin: 0 0 0.25em;
+}
+
+body .election dd {
+    margin: 0 0 0.125em;
+    font-size: 0.9em;
+}
+
+.votenow {
+    display: block;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    white-space: nowrap;
+    margin: 0px;
+    padding: 0 22px;
+    font-size: 16px;
+    height: 60px;
+    line-height: 60px;
+    background-color: #337ab7;
+    color: #FFF;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: none;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+a.votenow:hover {
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    white-space: nowrap;
+    margin: 0px;
+    padding: 0 22px;
+    background-color: #363b40;
+    color: #FFF;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border: none;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
