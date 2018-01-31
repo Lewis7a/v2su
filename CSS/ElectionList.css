@@ -92,7 +92,7 @@ body .election dd {
     padding: 0 22px;
     font-size: 16px;
     height: 60px;
-    line-height: 60px;
+    line-height: inherit;
     background-color: #337ab7;
     color: #FFF;
     font-weight: 600;

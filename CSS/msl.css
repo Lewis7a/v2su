@@ -2578,3 +2578,11 @@ iframe{ border:none;}
 .ajax__tab_xp .ajax__tab_header .ajax__tab_tab {
   height: 21px !important;
 }
+
+@media (min-width: 480px) and (max-width: 767px) {
+    #manifesto {
+        display: inline-block !important;
+        position: relative;
+        margin-top: 60px;
+    }
+}
