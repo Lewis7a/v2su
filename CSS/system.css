@@ -665,7 +665,7 @@ dl.comments span.comment_details h3 {
     }
 
     .vpForm .vpFormSubmit {
-        margin-left: 15em;
+        margin-left: 0px !important;
         padding: 0.5em;
         position: relative;
         background: #eee;
