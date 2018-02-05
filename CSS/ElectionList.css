@@ -11,7 +11,7 @@
         color: #333;
         background-color: transparent;
         margin: 0;
-        padding: 10px 3em 10px 0;
+        padding: 10px 3px 10px 0 !important;
         border-bottom-color: #c0c0c3;
         position: relative;
     }
