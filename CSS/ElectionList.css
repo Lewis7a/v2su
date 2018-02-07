@@ -11,18 +11,13 @@
         color: #333;
         background-color: transparent;
         margin: 0;
-        padding: 10px 3px 10px 0 !important;
+        padding: 0px !important;
         border-bottom-color: #c0c0c3;
         position: relative;
     }
 
     .election a.edit_election {
-        position: absolute;
-        right: 0;
-        top: 50%;
-        margin-top: -0.5em;
-        line-height: 1;
-        font-size: 14px;
+        display: none !important;
     }
 
     .election p {
