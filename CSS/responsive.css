@@ -1418,8 +1418,8 @@
 	.swiper_wrapper:not(.full-screen):not(.canvas-slider-grid) .swiper-slide { height: 400px !important; }
 	.sidebar-widgets-wrap {
 		position: relative;
-		margin: 0 -38px -40px 0;
 	}
+		margin: 0 -38px -40px 0;
     #page-menu, #page-menu-wrap {
         position: relative;
         display: block;
