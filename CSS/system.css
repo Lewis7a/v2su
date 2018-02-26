@@ -1859,7 +1859,7 @@ div#msl_toolbar {
 
 /* fixing the checkbox list... 
 .msl_admin_page .vp_form input[type=checkbox] {margin: 0 0.5em 0 0;}
-.msl_admin_page .vp_content table td {padding: 0.5em 2em 0.5em 0;} */
+.msl_admin_page .vp_content table td {padding: 0.5em 2em 0.5em 0;} */  
 
 /* spacing div for single buttons below other controls e.g. select organisation */
 .spacing-divider {
