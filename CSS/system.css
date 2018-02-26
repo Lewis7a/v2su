@@ -1466,8 +1466,17 @@ div#msl_toolbar {
 /* styles for form hints */
 .msl_admin_page .hint-text, .msl_admin_page .defaultdisplay {
     display: block;
-    float: left;
+    float: right;
     position: relative;
+}
+
+.msl_admin_page .hint-text {
+    padding-right: 400px;
+    margin-top: 15px;
+    margin-left: 5px;
+    display: inline-block;
+    min-height: 16px;
+    background: url(images/icons/16/help2.png) no-repeat 0 0;
 }
 
 .msl_admin_page .vp_form .hint-text span {
@@ -1884,14 +1893,15 @@ div#msl_toolbar {
 }
 
 .msl_admin_page .popup, .vp_form.popup {
-    width: auto;
+    width: 1000px;
     border: 1px solid #999;
     background: #fff;
-    padding: 6px;
+    padding: 20px;
     z-index: 10001 !important;
-    max-height: 90%;
+    max-height: 100%;
     max-width: 95%;
-    overflow-y: scroll;
+    overflow-y: visible;
+    overflow-x: auto;
 }
 
 .modalBackground {
