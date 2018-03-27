@@ -6772,8 +6772,8 @@ body:not(.device-touch) .social-icon {
 .i-overlay img,
 .i-overlay i {
 	display: block;
-	position: absolute;
-	top: 50%;
+	position: relative;
+	/* top: 50%; */
 	left: 50%;
 	margin: -24px 0 0 -24px;
 	width: 48px !important;
