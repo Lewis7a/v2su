@@ -6123,7 +6123,7 @@ body:not(.device-touch) .button.button-full strong {
 
 .feature-box.fbox-center.fbox-plain .fbox-icon i { font-size: 84px; }
 
-.feature-box.fbox-center.fbox-plain .fbox-icon img { height: 96px; }
+.feature-box.fbox-center.fbox-plain .fbox-icon img { height: 64px; }
 
 .feature-box.fbox-center.fbox-large.fbox-plain .fbox-icon i { font-size: 112px; }
 
