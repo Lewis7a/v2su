@@ -3339,7 +3339,7 @@ body.stretched .container-fullwidth .breadcrumb { right: 60px !important; }
 }
 
 .col-padding {
-    padding: 30px;
+    padding: 30px !important;
 }
 
 .intro-support-block > div:before {
