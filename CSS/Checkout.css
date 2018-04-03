@@ -100,7 +100,7 @@
 .checkoutpage .msl_table th, .checkoutpage .msl_table td {
 	padding: 10px;
 	vertical-align: top;
-	height:  30px;
+	height:  100%;
 }
 .checkoutpage td.product a {
 	display: block;
