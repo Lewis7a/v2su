@@ -7839,7 +7839,7 @@ body:not(.device-touch) .clients-grid li a {
 	height: 100%;
 	top: 0;
 	left: -1px;
-	border-left: 1px dashed #DDD;
+	border-left: none;
 }
 
 .clients-grid li:after,
@@ -7849,7 +7849,7 @@ body:not(.device-touch) .clients-grid li a {
 	top: auto;
 	left: 0;
 	bottom: -1px;
-	border-bottom: 1px dashed #DDD;
+	border-bottom: none;
 }
 
 
