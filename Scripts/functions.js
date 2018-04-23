@@ -695,24 +695,24 @@ var SU = SU || {};
 
                 // comment-out due to un-supported error. only happens once on MSL system...
 
-                //$wrapper.animsition({
-                //	inClass : animationIn,
-                //	outClass : animationOut,
-                //	inDuration : 1500,
-                //	outDuration : 800,
-                //	linkElement : '#primary-menu ul li a:not([target="_blank"]):not([href^=#])',
-                //	loading : true,
-                //	loadingParentElement : 'body',
-                //	loadingClass : 'css3-spinner',
-                //	unSupportCss : [
-                //					 'animation-duration',
-                //					 '-webkit-animation-duration',
-                //					 '-o-animation-duration'
-                //				   ],
-                //	overlay : false,
-                //	overlayClass : 'animsition-overlay-slide',
-                //	overlayParentElement : 'body'
-                //});
+                $wrapper.animsition({
+                	inClass : animationIn,
+                	outClass : animationOut,
+                	inDuration : 1500,
+                	outDuration : 800,
+                	linkElement : '#primary-menu ul li a:not([target="_blank"]):not([href^=#])',
+                	loading : true,
+                	loadingParentElement : 'body',
+                	loadingClass : 'css3-spinner',
+                	unSupportCss : [
+                					 'animation-duration',
+                					 '-webkit-animation-duration',
+                					 '-o-animation-duration'
+                				   ],
+                	overlay : false,
+                	overlayClass : 'animsition-overlay-slide',
+                	overlayParentElement : 'body'
+                });
             }
         },
 
