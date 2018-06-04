@@ -1074,6 +1074,7 @@ body.stretched #header.full-header .container {
 }
 
 #ctl00_controlpanel_ulControlPanel  {
+	display: block !important;
     top: -2px !important;
     left: 0px !important;
 }
