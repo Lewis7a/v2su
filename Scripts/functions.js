@@ -1262,7 +1262,7 @@ var SU = SU || {};
             $("#top-search-trigger").click(function (e) {
                 $body.toggleClass('top-search-open');
                 $topCart.toggleClass('top-cart-open', false);
-                $('#primary-menu > ul, #primary-menu > div > ul').toggleClass("show", false);
+                $('#primary-menu > ul, #primary-menu > div > ul').toggleClass("show", true);
                 $pagemenu.toggleClass('pagemenu-active', false);
                 if ($body.hasClass('top-search-open')) {
                     $topSearch.find('input').focus();
@@ -1276,7 +1276,7 @@ var SU = SU || {};
         topcart: function () {
 
             $("#top-cart-trigger").click(function (e) {
-                $pagemenu.toggleClass('pagemenu-active', false);
+                $pagemenu.toggleClass('pagemenu-active', true);
                 $topCart.toggleClass('top-cart-open');
                 e.stopPropagation();
                 e.preventDefault();
