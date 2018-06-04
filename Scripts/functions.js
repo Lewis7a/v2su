@@ -1261,7 +1261,7 @@ var SU = SU || {};
 
             $("#top-search-trigger").click(function (e) {
                 $body.toggleClass('top-search-open');
-                $topCart.toggleClass('top-cart-open', false);
+                $topCart.toggleClass('top-cart-open', true);
                 $('#primary-menu > ul, #primary-menu > div > ul').toggleClass("show", false);
                 $pagemenu.toggleClass('pagemenu-active', false);
                 if ($body.hasClass('top-search-open')) {
@@ -1277,7 +1277,7 @@ var SU = SU || {};
 
             $("#top-cart-trigger").click(function (e) {
                 $pagemenu.toggleClass('pagemenu-active', false);
-                $topCart.toggleClass('top-cart-open');
+                $topCart.toggleClass('top-cart-open', true);
                 e.stopPropagation();
                 e.preventDefault();
             });
