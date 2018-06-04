@@ -1059,7 +1059,7 @@ body.stretched #header.full-header .container {
 
 #primary-menu ul ul,
 #primary-menu ul li .mega-menu-content {
-	display: none !important;
+	display: none;
 	position: absolute;
 	width: 220px;
 	background-color: #FFF;
