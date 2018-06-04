@@ -922,7 +922,7 @@ var SU = SU || {};
 
             if ($().superfish) {
                 if ($body.hasClass('device-lg') || $body.hasClass('device-md')) {
-                    $('#primary-menu ul ul, #primary-menu ul .mega-menu-content').css('display', 'none');
+                    $('#primary-menu ul ul ul, #primary-menu ul .mega-menu-content').css('display', 'none');
                     SU.header.menuInvert();
                 }
 
