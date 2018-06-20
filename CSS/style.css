@@ -1939,7 +1939,12 @@ body.top-search-open #side-panel-trigger { opacity: 0; }
     margin: 0;
     border-radius: 0;
 }
-
+#header.full-header #primary-menu.style-4 > ul {
+    float: left;
+    padding-right: 15px;
+    margin-right: 25px;
+    border-right: none;
+}
 #header.sticky-header:not(.static-sticky) #primary-menu.style-4 > ul > li > a i {
     height: 60px !important;
     margin: 0px;
