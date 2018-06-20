@@ -1659,7 +1659,7 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header
 -----------------------------------------------------------------*/
 
 
-#top-account { margin: 35px 0 34px 20px; }
+#top-account { margin: 35px 0 34px 10px; }
 
 #top-account a {
 	-webkit-transition: color .3s ease-in-out;
