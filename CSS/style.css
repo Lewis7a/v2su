@@ -1665,6 +1665,7 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header
 	-webkit-transition: color .3s ease-in-out;
 	-o-transition: color .3s ease-in-out;
 	transition: color .3s ease-in-out;
+	color: #444 !important;
 }
 
 #top-account a span {
