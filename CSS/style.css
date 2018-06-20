@@ -2005,7 +2005,8 @@ body.top-search-open #side-panel-trigger { opacity: 0; }
 }
 #header.full-header #primary-menu.style-4 > ul {
     float: left;
-    padding-right: 15px;
+    margin-left: 25px;
+    padding-right: 0px;
     margin-right: 25px;
     border-right: none;
 }
