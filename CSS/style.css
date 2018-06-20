@@ -1680,11 +1680,22 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header
 #top-account .dropdown-menu { padding: 10px 0; }
 
 #top-account .dropdown-menu li a {
-	font-family: 'Lato', sans-serif;
-	font-weight: 400;
-	text-align: left;
-	line-height: 22px;
+	display: block;
+	height: 100px;
+	line-height: 100px;
+	padding: 0 15px;
+	color: #444;
+	font-weight: 600;
+	font-size: 13px;
+	letter-spacing: 1px;
+	font-family: 'Raleway', sans-serif;
+	-webkit-transition: height .4s ease, line-height .4s ease, margin .4s ease, padding .4s ease;
+	-o-transition: height .4s ease, line-height .4s ease, margin .4s ease, padding .4s ease;
+	transition: height .1s ease, line-height .1s ease, margin .1s ease, padding .1s ease;
 }
+
+#top-account .dropdown-menu li:hover a,
+#top-account .dropdown-menu li.current a { color: #337ab7; }
 
 #top-account .dropdown-menu li a .badge {
 	display: block;
