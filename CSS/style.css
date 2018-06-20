@@ -5286,7 +5286,7 @@ body:not(.device-touch) .button {
 
 .button.button-border.button-mini { line-height: 24px; }
 
-.button.button-border.button-small { line-height: 30px; }
+.button.button-border.button-small { line-height: 34px; }
 
 .button.button-border.button-large { line-height: 42px; }
 
