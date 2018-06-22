@@ -2017,7 +2017,7 @@ body.top-search-open #side-panel-trigger { opacity: 0; }
     border: 0px;
 }
 #primary-menu.style-4 {
-	float: left;
+	float: right;
 	height: 100px;
 }
 #header.sticky-header:not(.static-sticky) #control-menu.style-4 #primary-menu.style-4 > ul > li > a {
