@@ -1048,7 +1048,7 @@ body.top-search-open .dark #header-wrap:not(.not-dark) #top-search a,
 
 #footer.dark,
 .dark #footer {
-	background: url('/stylesheet/v4su/footer-bg.jpg') repeat; 
+	background: url('https://www.upsu.com/stylesheet/v4su/footer-bg.jpg') repeat; 
 	background-size: cover;
     background-position: center center;
 	background-color: #333;

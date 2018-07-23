@@ -10236,7 +10236,7 @@ button.toast-close-button {
 #footer {
 	position: relative;
 	background-color: #EEE;
-	background: url('/stylesheet/v4su/footer-bg.jpg') repeat; 
+	background: url('https://www.upsu.com/stylesheet/v4su/footer-bg.jpg') repeat; 
 	background-size: cover;
 	border-top: 0px solid rgba(0,0,0,0.2);
 }
