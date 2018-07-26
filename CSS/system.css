@@ -1107,7 +1107,8 @@ The following are override styles specifically for the admin pages only
 
 /* padding on admin page container */
 .msl_admin_page {
-    padding: 1em;
+    padding: 30px;
+    margin-bottom: 30px;
 }
 
     /* Hide breadcrumb on all admin pages. */
