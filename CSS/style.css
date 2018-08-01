@@ -10260,9 +10260,11 @@ button.toast-close-button {
 .footer-widgets-wrap .col_five_sixth { margin-bottom: 0; }
 
 #copyrights {
-	padding: 40px 0;
-	font-size: 14px;
+	padding: 40px;
+	font-size: 12px;
 	line-height: 1.8;
+	background-color: #333;
+	color: #F5F5F5;
 }
 
 #copyrights i.footer-icon {
