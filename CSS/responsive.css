@@ -1416,6 +1416,7 @@
     #media .media-item { width: 33.33333333%; }
 	.swiper_wrapper:not(.full-screen):not(.canvas-slider-grid),
 	.swiper_wrapper:not(.full-screen):not(.canvas-slider-grid) .swiper-slide { height: 400px !important; }
+	.swiper-slide { width: 100% !important }
 	.sidebar-widgets-wrap {
 		position: relative;
 	}
