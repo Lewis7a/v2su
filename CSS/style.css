@@ -9405,7 +9405,7 @@ label.error { display: none !important; }
 .heading-block h3 + span,
 .heading-block h4 + span { font-size: 20px; }
 
-.heading-block ~ p:not(.lead) { font-size: 15px; }
+.heading-block ~ p:not(.lead) { font-size: 14px; font-weight: 300 }
 
 .heading-block:after {
 	content: '';
