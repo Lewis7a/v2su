@@ -39,7 +39,7 @@ ul.msl-candidates li img {
     font-weight: 700;
     text-transform: capitalize;
     letter-spacing: 1px;
-    margin-bottom: 0;
+    margin-bottom: 10px !important;
     color: #333;
 }
 
