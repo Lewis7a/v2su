@@ -5454,6 +5454,11 @@ body:not(.device-touch) .button.button-reveal span {
 	transition: left 0.3s ease, right 0.3s ease;
 }
 
+.button.button-reveal.button-rounded i,
+.button.button-reveal span:hover {
+	color: #fff;
+}
+
 .button.button-reveal.button-mini { padding: 0 17px; }
 
 .button.button-reveal.button-mini i {
