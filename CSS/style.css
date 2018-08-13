@@ -4360,6 +4360,34 @@ p.wp-caption-text {
 
 #portfolio-ajax-loader img { display: block; }
 
+.page-title-center #portfolio-navigation {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 20px auto 0;
+}
+#page-title.page-title-center {
+    text-align: center;
+}
+#portfolio-navigation a i.icon-angle-left, #portfolio-navigation a i.icon-angle-right {
+    font-size: 32px;
+    top: -6px;
+}
+#portfolio-navigation a i {
+    top: -1px;
+    font-size: 24px;
+    line-height: 1;
+}
+#portfolio-navigation a {
+    margin-left: 12px;
+    width: 24px;
+    height: 24px;
+    text-align: center;
+    color: #444;
+    transition: color .3s linear;
+    -webkit-transition: color .3s linear;
+    -o-transition: color .3s linear;
+}
 
 /* ----------------------------------------------------------------
 	Shop
