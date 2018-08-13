@@ -707,7 +707,7 @@ input.button:hover {
 .home-news .msl-item .msl-image,
 .home-news .msl-item .msl-image a {
     position: relative;
-    display: block;
+    display: none !important;
     width: 100%;
     height: auto;
     margin: 0;
