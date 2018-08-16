@@ -1840,7 +1840,11 @@
 	.container,
 	#header.full-header .container,
 	.container-fullwidth { width: 470px; }
-
+	.intro-support-block .col-sm-4,
+	.intro-support-block .col-sm-6 {
+		width: 100%;
+		border: 1px solid #EEE;
+	}
 	.container.vertical-middle { width: 100% !important; }
 
 	.full-screen:not(.force-full-screen) .container.vertical-middle { width: 470px !important; }
