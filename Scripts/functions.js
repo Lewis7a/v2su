@@ -918,34 +918,54 @@ var SU = SU || {};
 
         },
 
-        superfish: function () {
+        superfish: function(){
 
-            if ($().superfish) {
-                if ($body.hasClass('device-lg') || $body.hasClass('device-md')) {
-                    $('#primary-menu ul ul ul, #primary-menu ul .mega-menu-content').css('display', 'none');
-                    SU.header.menuInvert();
-                }
+			if( $body.hasClass('device-xl') || $body.hasClass('device-lg') ) {
+				$('#primary-menu ul ul, #primary-menu ul .mega-menu-content').css('display', 'block');
+				SEMICOLON.header.menuInvert();
+				$('#primary-menu ul ul, #primary-menu ul .mega-menu-content').css('display', '');
+			}
 
-                $('body:not(.side-header) #primary-menu > ul, body:not(.side-header) #primary-menu > div > ul,.top-links > ul').superfish({
-                    popUpSelector: 'ul,.mega-menu-content,.top-link-section',
-                    delay: 250,
-                    speed: 350,
-                    animation: { opacity: 'show' },
-                    animationOut: { opacity: 'hide' },
-                    cssArrows: false
-                });
+			if( !$().superfish ) {
+				$body.addClass('no-superfish');
+				console.log('superfish: Superfish not Defined.');
+				return true;
+			}
 
-                $('body.side-header #primary-menu > ul').superfish({
-                    popUpSelector: 'ul',
-                    delay: 250,
-                    speed: 350,
-                    animation: { opacity: 'show', height: 'show' },
-                    animationOut: { opacity: 'hide', height: 'hide' },
-                    cssArrows: false
-                });
-            }
+			$('body:not(.side-header) #primary-menu:not(.on-click) > ul, body:not(.side-header) #primary-menu:not(.on-click) > div > ul:not(.dropdown-menu), .top-links:not(.on-click) > ul').superfish({
+				popUpSelector: 'ul,.mega-menu-content,.top-link-section',
+				delay: 250,
+				speed: 350,
+				animation: {opacity:'show'},
+				animationOut:  {opacity:'hide'},
+				cssArrows: false,
+				onShow: function(){
+					var megaMenuContent = $(this);
+					if( megaMenuContent.find('.owl-carousel.customjs').length > 0 ) {
+						megaMenuContent.find('.owl-carousel').removeClass('customjs');
+						SEMICOLON.widget.carousel();
+					}
 
-        },
+					if( megaMenuContent.hasClass('mega-menu-content') && megaMenuContent.find('.widget').length > 0 ) {
+						if( $body.hasClass('device-xl') || $body.hasClass('device-lg') ) {
+							setTimeout( function(){ SEMICOLON.initialize.commonHeight( megaMenuContent ); }, 200);
+						} else {
+							megaMenuContent.children().height('');
+						}
+					}
+				}
+			});
+
+			$('body.side-header #primary-menu:not(.on-click) > ul').superfish({
+				popUpSelector: 'ul',
+				delay: 250,
+				speed: 350,
+				animation: {opacity:'show',height:'show'},
+				animationOut:  {opacity:'hide',height:'hide'},
+				cssArrows: false
+			});
+
+		},
 
         menuInvert: function () {
 
