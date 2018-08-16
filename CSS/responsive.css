@@ -1467,6 +1467,9 @@
 		border-bottom: 1px solid #EEE;
 		-webkit-backface-visibility: hidden;
 	}
+	#side-panel-trigger a {
+		font-size: 20px;
+	}
 	.intro-support-block .col-sm-4,
 	.intro-support-block .col-sm-6 {
 		width: 100%;
@@ -1850,6 +1853,9 @@
 		width: 100%;
 		border: 1px solid #EEE;
 	}
+	#side-panel-trigger a {
+		font-size: 20px;
+	}
 	.container.vertical-middle { width: 100% !important; }
 
 	.full-screen:not(.force-full-screen) .container.vertical-middle { width: 470px !important; }
@@ -1998,7 +2004,9 @@
 }
 
 @media (max-width: 479px) {
-
+	#side-panel-trigger a {
+		font-size: 20px;
+	}
 	.container,
 	#header.full-header .container,
 	.container-fullwidth {width: 100% !important;}
