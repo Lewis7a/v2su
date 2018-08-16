@@ -1459,7 +1459,7 @@
     .responsive-sticky-header #top-search a, .responsive-sticky-header #primary-menu #top-cart, .responsive-sticky-header #side-panel-trigger { margin-top: 20px; margin-bottom: 20px; }
     .responsive-sticky-header #header-wrap {
 		z-index: 90;
-		position: fixed;
+		position: relative;
 		top: 0;
 		left: 0;
 		width: 100%;
