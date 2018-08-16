@@ -11097,3 +11097,45 @@ ul.switcher-op-selectors li {
 .dark .switcher .line {
     border-color: rgba(255,255,255,.1)
 }
+
+.intro-support-block {
+	border: 1px solid #EEE;
+	overflow: hidden;
+}
+
+.col-padding {
+	padding: 30px;
+}
+.col_one_third {
+    display: block;
+    position: relative;
+    margin-right: 2%;
+    margin-bottom: 50px;
+    float: left;
+}
+.intro-support-block > div:before {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: -1px;
+	width: 0;
+	height: 100%;
+	border: 1px solid #EEE;
+}
+
+.intro-support-block a.col-padding {
+	display: block;
+	background-color: #FFF;
+	-webkit-transition: all .3s ease;
+	-o-transition: all .3s ease;
+	transition: all .3s ease;
+}
+
+.intro-support-block a.col-padding:hover { background-color: #F5F5F5; }
+
+.intro-support-block span {
+	display: block;
+	font-size: 20px;
+	color: #444;
+	margin-top: 15px;
+}
