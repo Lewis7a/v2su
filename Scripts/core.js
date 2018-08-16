@@ -244,6 +244,84 @@ jQuery.extend( jQuery.easing,
 
 
 
+/**
+ *
+ * Twitter Feed Fetcher
+ *
+ */
+
+
+function sm_format_twitter(twitters) {
+  var statusHTML = [];
+  for (var i=0; i<twitters.length; i++){
+	var username = twitters[i].user.screen_name;
+	var name = twitters[i].user.name;
+	var username_avatar = twitters[i].user.profile_image_url_https;
+	var status = twitters[i].text.replace(/((https?|s?ftp|ssh)\:\/\/[^"\s\<\>]*[^.,;'">\:\s\<\>\)\]\!])/g, function(url) {
+	  return '<a href="'+url+'" target="_blank">'+url+'</a>';
+	}).replace(/\B@([_a-z0-9]+)/ig, function(reply) {
+	  return  reply.charAt(0)+'<a href="https://twitter.com/'+reply.substring(1)+'" target="_blank">'+reply.substring(1)+'</a>';
+	});
+	statusHTML.push('<li><i class="icon-twitter"></i><a href="https://twitter.com/'+username+'" class="twitter-avatar" target="_blank"><img src="'+username_avatar+'" alt="'+name+'" title="'+name+'"></a><span>'+status+'</span><small><a href="https://twitter.com/'+username+'/statuses/'+twitters[i].id_str+'" target="_blank">'+relative_time(twitters[i].created_at)+'</a></small></li>');
+  }
+  return statusHTML.join('');
+}
+
+function sm_format_twitter2(twitters) {
+  var statusHTML = [];
+  for (var i=0; i<twitters.length; i++){
+	var username = twitters[i].user.screen_name;
+	var status = twitters[i].text.replace(/((https?|s?ftp|ssh)\:\/\/[^"\s\<\>]*[^.,;'">\:\s\<\>\)\]\!])/g, function(url) {
+	  return '<a href="'+url+'" target="_blank">'+url+'</a>';
+	}).replace(/\B@([_a-z0-9]+)/ig, function(reply) {
+	  return  reply.charAt(0)+'<a href="https://twitter.com/'+reply.substring(1)+'" target="_blank">'+reply.substring(1)+'</a>';
+	});
+	statusHTML.push('<div class="slide"><span>'+status+'</span><small><a href="https://twitter.com/'+username+'/statuses/'+twitters[i].id_str+'" target="_blank">'+relative_time(twitters[i].created_at)+'</a></small></div>');
+  }
+  return statusHTML.join('');
+}
+
+function sm_format_twitter3(twitters) {
+  var statusHTML = [];
+  for (var i=0; i<twitters.length; i++){
+	var username = twitters[i].user.screen_name;
+	var status = twitters[i].text.replace(/((https?|s?ftp|ssh)\:\/\/[^"\s\<\>]*[^.,;'">\:\s\<\>\)\]\!])/g, function(url) {
+	  return '<a href="'+url+'" target="_blank">'+url+'</a>';
+	}).replace(/\B@([_a-z0-9]+)/ig, function(reply) {
+	  return  reply.charAt(0)+'<a href="https://twitter.com/'+reply.substring(1)+'" target="_blank">'+reply.substring(1)+'</a>';
+	});
+	statusHTML.push('<div class="slide"><div class="testi-content"><p>'+status+'</p><div class="testi-meta"><span><a href="https://twitter.com/'+username+'/statuses/'+twitters[i].id_str+'" target="_blank">'+relative_time(twitters[i].created_at)+'</a></span></div></div></div>');
+  }
+  return statusHTML.join('');
+}
+
+function relative_time(time_value) {
+  var values = time_value.split(" ");
+  time_value = values[1] + " " + values[2] + ", " + values[5] + " " + values[3];
+  var parsed_date = Date.parse(time_value);
+  var relative_to = (arguments.length > 1) ? arguments[1] : new Date();
+  var delta = parseInt((relative_to.getTime() - parsed_date) / 1000);
+  delta = delta + (relative_to.getTimezoneOffset() * 60);
+
+  if (delta < 60) {
+	return 'less than a minute ago';
+  } else if(delta < 120) {
+	return 'about a minute ago';
+  } else if(delta < (60*60)) {
+	return (parseInt(delta / 60)).toString() + ' minutes ago';
+  } else if(delta < (120*60)) {
+	return 'about an hour ago';
+  } else if(delta < (24*60*60)) {
+	return 'about ' + (parseInt(delta / 3600)).toString() + ' hours ago';
+  } else if(delta < (48*60*60)) {
+	return '1 day ago';
+  } else {
+	return (parseInt(delta / 86400)).toString() + ' days ago';
+  }
+}
+
+
+
 
 /*! jRespond.js v 0.10 | Author: Jeremy Fields [jeremy.fields@viget.com], 2013 | License: MIT */
 !function(a,b,c){"object"==typeof module&&module&&"object"==typeof module.exports?module.exports=c:(a[b]=c,"function"==typeof define&&define.amd&&define(b,[],function(){return c}))}(this,"jRespond",function(a,b,c){"use strict";return function(a){var b=[],d=[],e=a,f="",g="",i=0,j=100,k=500,l=k,m=function(){var a=0;return a="number"!=typeof window.innerWidth?0!==document.documentElement.clientWidth?document.documentElement.clientWidth:document.body.clientWidth:window.innerWidth},n=function(a){if(a.length===c)o(a);else for(var b=0;b<a.length;b++)o(a[b])},o=function(a){var e=a.breakpoint,h=a.enter||c;b.push(a),d.push(!1),r(e)&&(h!==c&&h.call(null,{entering:f,exiting:g}),d[b.length-1]=!0)},p=function(){for(var a=[],e=[],h=0;h<b.length;h++){var i=b[h].breakpoint,j=b[h].enter||c,k=b[h].exit||c;"*"===i?(j!==c&&a.push(j),k!==c&&e.push(k)):r(i)?(j===c||d[h]||a.push(j),d[h]=!0):(k!==c&&d[h]&&e.push(k),d[h]=!1)}for(var l={entering:f,exiting:g},m=0;m<e.length;m++)e[m].call(null,l);for(var n=0;n<a.length;n++)a[n].call(null,l)},q=function(a){for(var b=!1,c=0;c<e.length;c++)if(a>=e[c].enter&&a<=e[c].exit){b=!0;break}b&&f!==e[c].label?(g=f,f=e[c].label,p()):b||""===f||(f="",p())},r=function(a){if("object"==typeof a){if(a.join().indexOf(f)>=0)return!0}else{if("*"===a)return!0;if("string"==typeof a&&f===a)return!0}},s=function(){var a=m();a!==i?(l=j,q(a)):l=k,i=a,setTimeout(s,l)};return s(),{addFunc:function(a){n(a)},getBreakpoint:function(){return f}}}}(this,this.document));
@@ -254,6 +332,20 @@ jQuery.extend( jQuery.easing,
 
 !function(t){var o=0;t.fn.scrolled=function(a,n){"function"==typeof a&&(n=a,a=300);var c="scrollTimer"+o++;this.scroll(function(){var o=t(this),e=o.data(c);e&&clearTimeout(e),e=setTimeout(function(){o.removeData(c),n.call(o[0])},a),o.data(c,e)})}}(jQuery);
 
+
+
+
+/*!
+ * Original copyright:
+ *
+ * Copyright (C) 2009 Joel Sutherland
+ * Licenced under the MIT license
+ * http://www.newmediacampaigns.com/page/jquery-flickr-plugin
+ *
+ * Available tags for templates:
+ * title, link, date_taken, description, published, author, author_id, tags, image*
+ */
+!function(a){a.fn.jflickrfeed=function(b,c){b=a.extend(!0,{flickrbase:"https://api.flickr.com/services/feeds/",feedapi:"photos_public.gne",limit:20,qstrings:{lang:"en-us",format:"json",jsoncallback:"?"},cleanDescription:!0,useTemplate:!0,itemTemplate:"",itemCallback:function(){}},b);var d,e=b.flickrbase+b.feedapi+"?",f=!0;for(d in b.qstrings)f||(e+="&"),e+=d+"="+b.qstrings[d],f=!1;return a(this).each(function(){var d=a(this),f=this;a.getJSON(e,function(e){a.each(e.items,function(a,c){var e,g,h,i;if(a<b.limit){if(b.cleanDescription&&(e=/<p>(.*?)<\/p>/g,g=c.description,e.test(g)&&(c.description=g.match(e)[2],void 0!==c.description&&(c.description=c.description.replace("<p>","").replace("</p>","")))),c.image_s=c.media.m.replace("_m","_s"),c.image_t=c.media.m.replace("_m","_t"),c.image_m=c.media.m.replace("_m","_m"),c.image=c.media.m.replace("_m",""),c.image_b=c.media.m.replace("_m","_b"),c.image_q=c.media.m.replace("_m","_q"),delete c.media,b.useTemplate){i=b.itemTemplate;for(h in c)e=new RegExp("{{"+h+"}}","g"),i=i.replace(e,c[h]);d.append(i)}b.itemCallback.call(f,c)}}),a.isFunction(c)&&c.call(f,e)})})}}(jQuery);
 
 
 
@@ -324,6 +416,9 @@ function onYouTubeIframeAPIReady(){ytp.YTAPIReady||(ytp.YTAPIReady=!0,jQuery(doc
  * Licensed under the MIT license (http://www.opensource.org/licenses/mit-license.php)
  */
 (function(e){e.fn.appear=function(t,n){var r=e.extend({data:undefined,one:true,accX:0,accY:0},n);return this.each(function(){var n=e(this);n.appeared=false;if(!t){n.trigger("appear",r.data);return}var i=e(window);var s=function(){if(!n.is(":visible")){n.appeared=false;return}var e=i.scrollLeft();var t=i.scrollTop();var s=n.offset();var o=s.left;var u=s.top;var a=r.accX;var f=r.accY;var l=n.height();var c=i.height();var h=n.width();var p=i.width();if(u+l+f>=t&&u<=t+c+f&&o+h+a>=e&&o<=e+p+a){if(!n.appeared)n.trigger("appear",r.data)}else{n.appeared=false}};var o=function(){n.appeared=true;if(r.one){i.unbind("scroll",s);var o=e.inArray(s,e.fn.appear.checks);if(o>=0)e.fn.appear.checks.splice(o,1)}t.apply(this,arguments)};if(r.one)n.one("appear",r.data,o);else n.bind("appear",r.data,o);i.scroll(s);e.fn.appear.checks.push(s);s()})};e.extend(e.fn.appear,{checks:[],timeout:null,checkAll:function(){var t=e.fn.appear.checks.length;if(t>0)while(t--)e.fn.appear.checks[t]()},run:function(){if(e.fn.appear.timeout)clearTimeout(e.fn.appear.timeout);e.fn.appear.timeout=setTimeout(e.fn.appear.checkAll,20)}});e.each(["append","prepend","after","before","attr","removeAttr","addClass","removeClass","toggleClass","remove","css","show","hide"],function(t,n){var r=e.fn[n];if(r){e.fn[n]=function(){var t=r.apply(this,arguments);e.fn.appear.run();return t}}})})(jQuery);
+
+
+
 
 
 
