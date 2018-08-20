@@ -3171,7 +3171,7 @@ body.side-panel-open:not(.device-xxs):not(.device-xs):not(.device-sm) .body-over
 #page-title {
 	position: relative;
 	padding: 20px 0;
-	background-color: #F5F5F5;
+	background-color: #FFF;
 	border-bottom: 1px solid #EEE;
 }
 
