@@ -669,7 +669,7 @@
 		left: 0;
         z-index: 11;
 	}
-
+	#header.split-menu #primary-menu:not(.mobile-menu-off-canvas) > ul:not(:first-child) > li:first-child { border-top: 1px solid #EEE; }
 	#primary-menu > ul,
 	#primary-menu > div > ul {
 		display: none;
