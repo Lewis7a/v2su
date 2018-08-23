@@ -3202,6 +3202,7 @@ body.side-panel-open:not(.device-xxs):not(.device-xs):not(.device-sm) .body-over
 
 .breadcrumb {
 	position: relative !important;
+	display: block !important;
 	width: auto !important;
 	top: 50% !important;
 	left: auto !important;
