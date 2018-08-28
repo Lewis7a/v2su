@@ -5812,7 +5812,7 @@ body:not(.device-touch) .button.button-full strong {
 	padding: 150px 0 !important;
 }
 
-.promo-full a.button { left: 15px !important; }
+.promo-full a.button { left: 15px; }
 .promo-full.promo-right a.button {
     right: auto !important;
 }
