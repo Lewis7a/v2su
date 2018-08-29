@@ -1907,7 +1907,7 @@
 	#side-panel-trigger a {
 		font-size: 20px;
 	}
-	#page-menu { top: 0px; }
+	#page-menu { top: 0px; z-index: 50;}
 	.container.vertical-middle { width: 100% !important; }
 
 	.full-screen:not(.force-full-screen) .container.vertical-middle { width: 470px !important; }
@@ -2059,7 +2059,7 @@
 	#side-panel-trigger a {
 		font-size: 20px;
 	}
-	#page-menu { top: 0px; }
+	#page-menu { top: 0px; z-index: 50;}
 	.container,
 	#header.full-header .container,
 	.container-fullwidth {width: 100% !important;}
