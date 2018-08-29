@@ -1860,7 +1860,7 @@
 
 	.heading-block h1 + span { font-size: 20px; }
 
-	.heading-block h2 + span { font-size: 18px; }
+	.heading-block h2 + span { font-size: 18px; margin-left: 0px }
 
 	.heading-block h3 + span,
 	.heading-block h4 + span { font-size: 17px; }
