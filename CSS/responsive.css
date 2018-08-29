@@ -1518,8 +1518,21 @@
 		border-bottom: 1px solid #EEE;
 		-webkit-backface-visibility: hidden;
 	}
+	#footer .footer-widgets-wrap {
+		position: relative;
+		padding: 20px;
+	}
 	#side-panel-trigger a {
 		font-size: 20px;
+	}
+	.heading-block {
+		margin-bottom: 30px;
+		margin-left: 0px;
+		padding: 20px;
+	}
+	.button.button-border.button-small {
+		line-height: 34px;
+		margin-left: 20px !important;
 	}
 	.intro-support-block .col-sm-4,
 	.intro-support-block .col-sm-6 {
@@ -1852,7 +1865,7 @@
 	.heading-block h3 + span,
 	.heading-block h4 + span { font-size: 17px; }
 
-	.heading-block ~ p:not(.lead) { font-size: 15px; }
+	.heading-block ~ p:not(.lead) { font-size: 15px; padding: 0px 20px 0px 20px; }
 
 	.emphasis-title h1,
 	.emphasis-title h2 { font-size: 44px !important; }
