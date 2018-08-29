@@ -963,14 +963,15 @@ dl.comments span.comment_details h3 {
             display: block;
             float: left;
             position: relative;
-            width: 130px;
-            min-height: 3.6em;
+            width: 25%;
+            min-height: 30px;
             overflow: visible;
-            padding-top: 58px;
+            padding: 30px;
             margin: 5px;
             text-decoration: none;
-            text-align: center;
-            background-repeat: no-repeat;
+            line-height: 16px;
+            text-align: left;
+            background: #f5f5f5;
             background-position: 50% 5px;
         }
 
