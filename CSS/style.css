@@ -1039,7 +1039,8 @@ body.stretched #header.full-header .container {
 	font-weight: 600;
 	font-size: 13px;
 	letter-spacing: 1px;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Arial', sans-serif;
+	text-transform: lowercase;
 	-webkit-transition: height .4s ease, line-height .4s ease, margin .4s ease, padding .4s ease;
 	-o-transition: height .4s ease, line-height .4s ease, margin .4s ease, padding .4s ease;
 	transition: height .1s ease, line-height .1s ease, margin .1s ease, padding .1s ease;
