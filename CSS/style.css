@@ -49,7 +49,7 @@ dl, dt, dd, ol, ul, li {
 body {
 	line-height: 1.5;
 	color: #555;
-	font-family: 'Arial', Helvetica, sans-serif;
+	font-family: 'Quicksand', sans-serif;
 }
 
 a {
@@ -86,7 +86,7 @@ h6 {
 	font-weight: 600;
 	line-height: 1.5;
 	margin: 0 0 30px 0;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 }
 
 h5,
@@ -128,7 +128,7 @@ table,
 fieldset,
 form { margin-bottom: 0px; }
 
-small { font-family: 'Lato', sans-serif; }
+small { font-family: 'Quicksand', sans-serif; }
 
 .uppercase { text-transform: uppercase !important; }
 
@@ -1116,7 +1116,7 @@ body.stretched #header.full-header .container {
 	padding-bottom: 0 !important;
 	border: 0 !important;
 	letter-spacing: 0;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	-webkit-transition: all .2s ease-in-out;
 	-o-transition: all .2s ease-in-out;
 	transition: all .2s ease-in-out;
@@ -1690,7 +1690,7 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header
 	padding-bottom: 0 !important;
 	border: 0 !important;
 	letter-spacing: 0;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 	-webkit-transition: all .2s ease-in-out;
 	-o-transition: all .2s ease-in-out;
 	transition: all .2s ease-in-out;
@@ -4308,7 +4308,7 @@ div.alignright {
 .wp-caption {
 	text-align: center;
 	margin: 10px 20px 13px 20px;
-	font-family: 'Lato', Georgia, "Times New Roman", Times, serif;
+	font-family: 'Quicksand', sans-serif;
 	font-style: italic;
 }
 
@@ -6298,7 +6298,7 @@ body:not(.device-touch) .button.button-full strong {
 
 .feature-box.fbox-center.fbox-italic p {
 	font-style: italic;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 }
 
 
@@ -8681,7 +8681,7 @@ body:not(.device-touch) .rounded-skill {
 
 .skills li .progress-percent .counter {
 	font-weight: 400;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 }
 
 .progress-percent:after, .progress-percent:before {
@@ -10648,7 +10648,7 @@ body:not(.device-touch) .tagcloud a {
 	font-size: 12px;
 	padding: 6px 0;
 	letter-spacing: 1px;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 }
 
 .nav-tree ul ul a i.icon-angle-right { font-size: 12px; }
@@ -10728,7 +10728,7 @@ body:not(.device-touch) .tagcloud a {
 	font-size: 12px;
 	padding: 6px 0;
 	letter-spacing: 1px;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Quicksand', sans-serif;
 }
 
 .nav-tree-page ul ul a i.icon-angle-right { font-size: 12px; }
