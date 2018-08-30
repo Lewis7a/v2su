@@ -9421,6 +9421,7 @@ label.error { display: none !important; }
 .heading-block > span:not(.before-heading) {
 	display: block;
 	margin: 20px;
+	margin-left: 0px;
 	font-weight: 300;
 	color: #777;
 }
