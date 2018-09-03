@@ -1471,6 +1471,9 @@
 	.sidebar-widgets-wrap {
 		position: relative;
 	}
+	#page-title {
+		padding: 20px 0 25px;
+	}
 		margin: 0 -38px -40px 0;
     #page-menu, #page-menu-wrap {
         position: relative;
@@ -1661,7 +1664,7 @@
 		top: 0 !important;
 		left: 0 !important;
 		right: 0 !important;
-		margin: 15px 0 0 !important;
+		margin: 5px 0 0 !important;
 	}
 
 	#page-title #media-navigation,
