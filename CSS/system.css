@@ -280,6 +280,7 @@ input.datebox {
     margin: 0.2em;
     padding: 0px;
     border: 1px solid #c60;
+    background: none !important;
     border-width: 2px 0;
 }
 
