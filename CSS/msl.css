@@ -158,6 +158,12 @@ ul.msl-candidates li img {
     #breadcrumb {
         display:block;
     }
+    .breadcrumb li {
+        display: inline-block;
+        margin: 5px;
+        padding: 0;
+        list-style: none;
+    }
 }
 /* END BREADCRUMB */
 
