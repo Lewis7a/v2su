@@ -2452,6 +2452,16 @@ background-color:#f0f0f0;
       color: #00c8aa; 
 }
 
+.msl-form-completion-message {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border-left: 4px solid rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    background: #C5EBD4;
+    color: #184B21;
+}
+
 /* Clubs&Socs - Org Browse   
 /* ======================= */
 .browse input.textbox {

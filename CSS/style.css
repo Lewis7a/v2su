@@ -66,8 +66,8 @@ img { max-width: 100%; max-height: 100%; }
 iframe { border: none !important; max-width: 100%; }
 
 textarea {
-    background-color: #393939 !important;
-    color: #e8e8e8 !important;
+    background-color: #ffffff !important;
+    color: #555555 !important;
 }
 
 
@@ -9386,7 +9386,7 @@ label.error { display: none !important; }
 /* Heading Block - with Subtitle
 -----------------------------------------------------------------*/
 
-.heading-block { margin-bottom: 50px; margin-left: 15px;}
+.heading-block { margin-bottom: 50px; margin-left: 0px;}
 
 .heading-block h1,
 .heading-block h2,
