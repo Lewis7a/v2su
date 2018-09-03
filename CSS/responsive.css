@@ -1923,7 +1923,7 @@
 	#side-panel-trigger a {
 		font-size: 20px;
 	}
-	#page-menu { top: 0px; z-index: 50;}
+	#page-menu { top: 0px !important; z-index: 50;}
 	.container.vertical-middle { width: 100% !important; }
 
 	.full-screen:not(.force-full-screen) .container.vertical-middle { width: 470px !important; }
