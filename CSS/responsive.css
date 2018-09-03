@@ -2075,7 +2075,7 @@
 	#side-panel-trigger a {
 		font-size: 20px;
 	}
-	#page-menu { top: 0px; z-index: 50;}
+	#page-menu { top: 0px !important; z-index: 50;}
 	.container,
 	#header.full-header .container,
 	.container-fullwidth {width: 100% !important;}
