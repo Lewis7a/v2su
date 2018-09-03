@@ -200,9 +200,9 @@ textarea.textbox {
     display: block;
     margin: 0.2em;
     padding: 15px;
-    color: #c00;
-    background: #ffc url(images/interface/error.gif) no-repeat 4px 4px;
-    border: 1px solid #c60;
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
     border-width: 2px 0;
 }
 
@@ -213,7 +213,7 @@ textarea.textbox {
     .error h5,
     .error h6,
     .error a {
-        color: #c00;
+        color: #721c24;
         margin: 0;
     }
 
@@ -228,21 +228,20 @@ textarea.textbox {
 }
 
 .input_error {
-    color: #c00;
-    background: #FFEBEB;
-    border: 1px solid #EBAFAF;
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
 }
 
 .error_inline {
     display: inline-block;
     margin: 0.2em;
     padding: 2px 2px 2px 24px;
-    color: #c00 !important;
-    background: transparent url(images/interface/error.gif) no-repeat 4px 4px;
+    color: #721c24 !important;
 }
 
 .required {
-    color: #c00;
+    color: #721c24;
 }
 
 .form_hint {
@@ -276,8 +275,7 @@ input.datebox {
     display: block;
     clear: both;
     margin: 0.2em;
-    padding: 2px 2px 2px 28px;
-    background: url(images/interface/warning.png) no-repeat 4px 4px;
+    padding: 0px;
     border: 1px solid #c60;
     border-width: 2px 0;
 }
