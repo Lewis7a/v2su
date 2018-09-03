@@ -197,13 +197,16 @@ textarea.textbox {
 }
 
 .error {
-    display: block;
-    margin: 0.2em;
+    display: inline-block;
+    position: relative;
+    width: max-content;
+    margin: 10px;
     padding: 15px;
-    color: #721c24;
-    background-color: #f8d7da;
-    border-color: #f5c6cb;
-    border-width: 2px 0;
+    background: none;
+    background-color: #f2dede;
+    color: #a94442;
+    border: 1px solid #a94442;
+    border-radius: 4px;
 }
 
     .error h1,
