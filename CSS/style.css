@@ -1039,8 +1039,8 @@ body.stretched #header.full-header .container {
 	font-weight: 600;
 	font-size: 13px;
 	letter-spacing: 1px;
-	font-family: 'Arial', sans-serif;
-	text-transform: lowercase;
+	font-family: 'Raleway', sans-serif;
+	text-transform: capitalize;
 	-webkit-transition: height .4s ease, line-height .4s ease, margin .4s ease, padding .4s ease;
 	-o-transition: height .4s ease, line-height .4s ease, margin .4s ease, padding .4s ease;
 	transition: height .1s ease, line-height .1s ease, margin .1s ease, padding .1s ease;
@@ -2118,7 +2118,7 @@ body.top-search-open #side-panel-trigger { opacity: 0; }
 	float: left;
 	color: #FFF;
 	font-size: 20px;
-	font-weight: 600;
+	font-weight: 500;
 }
 
 
@@ -2146,7 +2146,7 @@ body.top-search-open #side-panel-trigger { opacity: 0; }
 	line-height: 44px;
 	padding: 0 17px;
 	color: #FFF;
-	font-size: 14px;
+	font-size: 13px;
 }
 
 body:not(.device-touch) #page-menu nav li a {
@@ -7203,7 +7203,7 @@ body:not(.device-touch) .social-icon i {
 	padding: 0 0 0 24px;
 	margin: 0;
 	font-size: 16px;
-	font-weight: 600;
+	font-weight: 500;
 	color: #444;
 	cursor: pointer;
 }
