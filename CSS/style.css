@@ -5253,7 +5253,7 @@ body:not(.device-touch) .button {
 	text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
 
-.button.button-dark:hover { background-color: #FFF; }
+.button.button-dark:hover { background-color: #337ab7; }
 .button.button-green:hover { background-color: #28671e; }
 .button.button-rag:hover { background-color: #333; }
 
