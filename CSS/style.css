@@ -11145,3 +11145,9 @@ ul.switcher-op-selectors li {
 	color: #444;
 	margin-top: 15px;
 }
+.intro-support-block span dark {
+	display: block;
+	font-size: 20px;
+	color: #FFF;
+	margin-top: 35px;
+}
