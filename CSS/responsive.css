@@ -24,7 +24,8 @@
 
 
 @media (min-width: 992px) and (max-width: 1199px) {
-
+	.slider-arrow-top-sm,
+	.slider-arrow-bottom-sm { display: none !important; }
 	#wrapper { width: 1000px; }
     #wrapper-media { width: 1500px; }
 
@@ -1595,9 +1596,7 @@
 	.slider-caption p,
 	.slider-caption .button,
 	.camera_caption,
-	.ei-title,
-	.slider-arrow-top-sm,
-	.slider-arrow-bottom-sm { display: none !important; }
+	.ei-title { display: none !important; }
 
 	.slider-caption h2 { margin-bottom: 0 !important; }
 
