@@ -19,6 +19,7 @@
 
 	.promo-uppercase > span,
 	.promo-uppercase > .container > span { font-size: 14px; }
+	
 
 }
 
@@ -540,7 +541,8 @@
 		margin: 0;
 		box-shadow: none;
 	}
-
+	.slider-arrow-top-sm,
+	.slider-arrow-bottom-sm { display: none !important; }
 	#header.full-header .container,
 	.container-fullwidth {
 		padding: 0 15px !important;
