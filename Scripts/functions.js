@@ -8,6 +8,26 @@ $.fn.doOnce = function (func) {
     this.length && func.apply(this);
     return this;
 };
+//whatson
+$('#whatson .msl-item').each(function () {
+    $(this).find(".msl-pubdate, .msl-title,.msl-leader").wrapAll('<div class="news-content"></div>');
+    });
+    $('#whatson .msl-item .news-content').each(function () {
+         $(this).find(".msl-pubdate").insertBefore($(this).find(".msl-title"));
+    });
+    $('#whatson .msl-item img').each(function () {
+      $(this).wrapAll('<div class="img-content"></div>');
+    });
+    
+      $('.msl_organisation_list li.msl-gl-logo').each(function () {
+        img = $(this).find('a').addClass('gl-logo');
+        $(this).next().prepend(img);
+        $(this).remove();
+      });
+    
+    $('#filterlist  ul.msl_organisation_list li').each(function () {
+         $(this).find(".msl-gl-attributes").insertBefore($(this).find(".msl-gl-link"));
+});
 // +++++++++++++++++++
 // Basket+Search document load
 // Look to optimize search
