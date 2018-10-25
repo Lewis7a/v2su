@@ -1133,7 +1133,7 @@ body.stretched #header.full-header .container {
 
 #primary-menu ul ul > li.sub-menu > a,
 #primary-menu ul ul > li.sub-menu:hover > a {
-	background-image: url("https://www.upsu.com/stylesheet/v4su/submenu.png");
+	background-image: url("#");
 	background-position: right center;
 	background-repeat: no-repeat;
 }
@@ -11151,3 +11151,4 @@ ul.switcher-op-selectors li {
 	color: #FFF;
 	margin-top: 35px;
 }
+
