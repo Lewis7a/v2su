@@ -199,13 +199,13 @@ span.middot {
 
 .rightmargin-sm { margin-right: 30px !important; }
 
-.topmargin-sm { margin-top: 30px !important; }
+.topmargin-sm { padding-top: 30px !important; }
 .toppadding-sm { padding-top: 30px !important; }
 .toppadding-md { padding-top: 50px !important; }
 
 .bottommargin-sm-radio { margin-bottom: 20px !important; }
-.bottommargin-sm { margin-bottom: 20px !important; }
-.bottommargin-xs { margin-bottom: 10px !important; }
+.bottommargin-sm { padding-bottom: 20px !important; }
+.bottommargin-xs { padding-bottom: 10px !important; }
 
 .clear-bottommargin-sm { margin-bottom: -30px !important; }
 
@@ -215,9 +215,9 @@ span.middot {
 
 .rightmargin-lg { margin-right: 80px !important; }
 
-.topmargin-lg { margin-top: 80px !important; }
+.topmargin-lg { padding-top: 80px !important; }
 
-.bottommargin-lg { margin-bottom: 80px !important; }
+.bottommargin-lg { padding-bottom: 80px !important; }
 
 .clear-bottommargin-lg { margin-bottom: -80px !important; }
 
