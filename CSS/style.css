@@ -1681,7 +1681,7 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header
 
 #top-account .dropdown-menu { 
 	padding: 10px 10px;
-	top: 30px;
+	top: 32px !important;
 }
 
 #top-account .dropdown-menu li a {
