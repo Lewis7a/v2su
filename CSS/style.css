@@ -1699,7 +1699,7 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header
 	-o-transition: all .2s ease-in-out;
 	transition: all .2s ease-in-out;
 }
-
+#top-account .dropdown-menu li:hover,
 #top-account .dropdown-menu li:hover a,
 #top-account .dropdown-menu li.current a { color: #EEE; }
 
