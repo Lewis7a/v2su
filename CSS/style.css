@@ -1679,7 +1679,10 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header
 	font-size: 12px;
 }
 
-#top-account .dropdown-menu { padding: 10px 0; }
+#top-account .dropdown-menu { 
+	padding: 10px 10px;
+	top: 30px;
+}
 
 #top-account .dropdown-menu li a {
 	font-size: 12px;
@@ -1698,7 +1701,7 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header
 }
 
 #top-account .dropdown-menu li:hover a,
-#top-account .dropdown-menu li.current a { color: #337ab7; }
+#top-account .dropdown-menu li.current a { color: #EEE; }
 
 #top-account .dropdown-menu li a .badge {
 	display: block;
