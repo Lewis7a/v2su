@@ -138,6 +138,7 @@ input.button {
     letter-spacing: 1px;
     border: none;
     text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+    border-radius: 3px;
 }
 
 select {
@@ -1141,8 +1142,8 @@ div#msl_toolbar {
             div#msl_toolbar ul li a {
                 display: block;
                 float: left;
-                line-height: 1em;
-                height: 1em;
+                line-height: 30px;
+                height: 30px;
                 padding: 2px 10px 2px 10px;
                 margin: 0;
                 text-decoration: none;
@@ -1154,8 +1155,8 @@ div#msl_toolbar {
             div#msl_toolbar ul li span {
                 display: block;
                 float: left;
-                line-height: 1em;
-                height: 1em;
+                line-height: 30px;
+                height: 30px;
                 padding: 2px 10px 2px 10px;
                 margin: 0;
                 text-decoration: none;

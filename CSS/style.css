@@ -1740,7 +1740,7 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header
 
 #top-cart .top-cart-content {
 	opacity: 0;
-	z-index: -1000;
+	z-index: -2;
 	position: absolute;
 	width: 280px;
 	background-color: #FFF;
@@ -1764,7 +1764,6 @@ body:not(.device-sm):not(.device-xs):not(.device-xxs) #header.transparent-header
 	opacity: 1;
 	z-index: 11;
 	margin-top: 0;
-    overflow: hidden;
 }
 
 .top-cart-title {
@@ -9211,8 +9210,8 @@ fieldset[disabled] .sm-form-control {
 
 label {
 	display: inline-block;
-    margin-left: 20px;
-    padding-left: 20px !important;
+    margin-left: 0px;
+    padding-right: 20px !important;
 	font-size: 12px;
 	font-weight: 700;
 	font-family: 'Raleway', sans-serif;
