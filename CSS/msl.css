@@ -2310,7 +2310,6 @@ body.top-search-open #top-search .searchbox {
   border-top: 1px solid #eee;
   margin-bottom: 2px;
 }
-/*div.basket, div.sidepanel, #basket a, #basket dd, #basket dt { z-index: -10000;}*/
 div.basket,
 div.sidepanel,
 #basket dd {
@@ -2319,10 +2318,8 @@ div.sidepanel,
   background: #333333;
   color: #fff;
   width: 100%;
-  /*border: 1px solid #CDDBDB;*/
   margin: 0px !important;
   list-style-type: none;
-  /*border: none !important;*/
   background-image: none;
 }
 .dark div.basket,
@@ -2332,45 +2329,47 @@ div.sidepanel,
   display: block;
   background: #333;
   width: 100%;
-  /*border: 1px solid #CDDBDB;*/
   padding :15px !important; 
   margin: 0px !important;
   list-style-type: none;
-  /*border: none !important;*/
   background-image: none;
 }
 #basket dd.price {
-  display: block;
-  padding :5px !important; 
-  color: #c33 !important;
-  line-height: 14px;
-  font-size: 12px !important;
-  color: #999;
+    display: inline-block;
+    padding :5px 15px 5px 5px;
+    text-align: right;
+    color: #287d2f !important;
+    line-height: 14px;
+    font-size: 12px !important;
+    color: #999;
 }
 #basket dd.qty {
-  display: inline-block;
-  padding :5px !important; 
-  line-height: 12px;
-  font-size: 10px !important;
+    display: inline-block;
+    padding :5px 15px 5px 5px; 
+    line-height: 12px;
+    font-size: 10px !important;
+    text-align: right;
 }
 #basket a.remove {
-  font-size: 10px !important;
-  color: #FFF !important;
+    font-size: 10px !important;
+    color: #C04A4A !important;
 }
 #basket dt {
-  text-align: left !important;
-  font-size: 13px !important;
-  width: auto !important;
-  height: auto !important;
-  font-weight: 600;
+    text-align: left !important;
+    font-size: 13px !important;
+    width: auto !important;
+    height: auto !important;
+    font-weight: 600;
 }
 #basket dt a {
-  text-align: left !important;
-  font-size: 13px !important;
-  width: auto !important;
-  height: auto !important;
-  font-weight: 600;
-  color: #FFF;
+    display: inline-block;
+    padding: 0px 0px 10px 10px;
+    width: auto !important;
+    height: auto !important;
+    text-align: right !important;
+    font-size: 13px !important;
+    font-weight: 600;
+    color: #FFF;
 }
 
 #basket-wrapper #basket {padding:10px;}
