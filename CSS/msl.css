@@ -2344,8 +2344,8 @@ div.sidepanel,
     color: #287d2f !important;
     line-height: 14px;
     font-family: "Quicksand", sans-serif;
+    font-weight: 500;
     font-size: 12px !important;
-    color: #999;
 }
 #basket dd.qty {
     display: inline-block;
@@ -2374,7 +2374,7 @@ div.sidepanel,
     height: auto !important;
     text-align: right !important;
     font-size: 13px !important;
-    font-weight: 600;
+    font-weight: 400;
     color: #333;
 }
 
