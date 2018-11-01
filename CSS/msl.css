@@ -2311,7 +2311,9 @@ body.top-search-open #top-search .searchbox {
 
 #basket dl {
   border-top: 1px solid #eee;
-  margin-bottom: 2px;
+  border-bottom: 1px solid #eee;
+  margin: 3px 3px 8px 3px;
+  padding: 10px 0px 10px 0px;
 }
 div.basket,
 div.sidepanel,
