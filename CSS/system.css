@@ -287,12 +287,13 @@ input.datebox {
 
 .msl_info {
     display: block;
-    clear: both;
     margin: 0.2em;
-    padding: 2px 2px 2px 28px;
-    background: url(images/interface/information.png) no-repeat 4px 4px;
-    border: none;
-    border-width: 2px 0;
+    padding: 15px;
+    background: none !important;
+    background-color: #dff0d8 !important;
+    border-color: #d6e9c6;
+    color: #3c763d;
+    border: 1px solid transparent;
 }
 
 .msl_error {
