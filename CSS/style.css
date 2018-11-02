@@ -9210,7 +9210,7 @@ fieldset[disabled] .sm-form-control {
 
 label {
 	display: inline-block;
-    margin-left: 0px;
+    margin-left: 10px;
     padding-right: 20px !important;
 	font-size: 12px;
 	font-weight: 700;
