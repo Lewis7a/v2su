@@ -268,11 +268,11 @@ input.datebox {
 /* MSL Notification control wrapper style 
     - used in conjunction with error/warning/information styles below */
 .msl_notification {
-    background-color: #ffc;
-    border: none;
-    margin: 1em 0 1em 0;
-    padding: 15px;
-    font-weight: bold;
+    position: relative;
+    padding: .75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
 }
 
 .msl_warning {
@@ -283,17 +283,16 @@ input.datebox {
     border: 1px solid #c60;
     background: none !important;
     border-width: 2px 0;
+    font-size: 14px;
 }
 
 .msl_info {
     display: block;
     margin: 0.2em;
     padding: 15px;
-    background: none !important;
-    background-color: #dff0d8 !important;
-    border-color: #d6e9c6;
-    color: #3c763d;
-    border: 1px solid transparent;
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
 }
 
 .msl_error {
