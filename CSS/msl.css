@@ -273,8 +273,7 @@ font-weight: 600;
 .sidepanel.controlpanel h3 {
     display: none;
 }
-#primary-menu.style-4,
-.sidepanel.controlpanel p {
+#primary-menu.style-4 .sidepanel.controlpanel p {
     margin: 28px 0;
     height: 44px;
     line-height: 44px;
