@@ -7,7 +7,7 @@
 /* test text */ 
 /* Many reset css lists remove these, re-override in custom css if required */
 b, strong {
-    font-weight: bold;
+    font-weight: 500;
 }
 
 i, em {
