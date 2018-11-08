@@ -278,9 +278,11 @@ font-weight: 600;
     height: 64px;
     line-height: 40px;
 }
-#header.sticky-header:not(.static-sticky) #primary-menu.style-4 > .sidepanel.controlpanel p {
+#header.sticky-header:not(.static-sticky) #primary-menu.style-4 .sidepanel.controlpanel p {
     margin: 0;
     border-radius: 0;
+    padding-top: 0px;
+    border: 0px;
     height: 60px !important;
     line-height: 60px;
 }
