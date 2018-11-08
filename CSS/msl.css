@@ -275,8 +275,8 @@ font-weight: 600;
 }
 #primary-menu.style-4 .sidepanel.controlpanel p {
     margin: 28px 0;
-    height: 44px;
-    line-height: 44px;
+    height: 64px;
+    line-height: 40px;
 }
 #header.sticky-header:not(.static-sticky) #primary-menu.style-4 > .sidepanel.controlpanel p {
     margin: 0;
@@ -285,7 +285,7 @@ font-weight: 600;
     line-height: 60px;
 }
 .sidepanel.controlpanel p {
-    padding: 15px;
+    padding: 0 15px;
     display: block;
     margin: 28px 0;
     font-family: inherit;
