@@ -274,8 +274,8 @@ font-weight: 600;
     display: none;
 }
 #primary-menu.style-4 .sidepanel.controlpanel p {
-    margin: 28px 0;
-    height: 64px;
+    margin: 28px 0px 21px;
+    height: 44px;
     line-height: 40px;
 }
 #header.sticky-header:not(.static-sticky) #primary-menu.style-4 .sidepanel.controlpanel p {
