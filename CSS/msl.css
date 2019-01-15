@@ -134,7 +134,7 @@ ul.msl-candidates li img {
 #breadcrumb {
     text-align:left;
     margin: 0;
-    padding:3px 0;
+    padding:3px 25px;
     display:none;
     font-size:100%;
 }
