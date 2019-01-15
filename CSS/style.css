@@ -11112,7 +11112,7 @@ ul.switcher-op-selectors li {
 
 .intro-support-block {
 	border: 1px solid #EEE;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 .col-padding {
